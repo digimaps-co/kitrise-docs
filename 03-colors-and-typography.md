@@ -53,7 +53,7 @@ Values:
 
 Not every section offers every value. For example, some sections offer only Brand colors, Soft and Accent, and others add Light and Dark. Some sections name the options Brand, White or Soft neutral. The editor shows only the options a section supports.
 
-The shared palette rules live in `assets/fixture-layouts.css`. The section schemas hold the exact option lists in `sections/*.liquid`.
+Each section lists its own palette options in its settings.
 
 ## Secondary text contrast
 
@@ -67,7 +67,7 @@ How it works, from `assets/critical.css`:
 - The result replaces `--fx-brand-muted` and `--fx-color-muted`.
 - It is wrapped in `@supports` for relative color syntax and `sign()`. Browsers without that support keep the base muted value, which is the text color at 62% opacity.
 
-The fixed palettes (Light, Soft, Dark) use fixed muted colors that are set in `assets/fixture-layouts.css`. The Accent palette uses the Accent text color for muted text.
+The fixed palettes (Light, Soft, Dark) use fixed muted colors. The Accent palette uses the Accent text color for muted text.
 
 ## Light and dark mode
 
@@ -88,7 +88,7 @@ Behavior:
 
 - A toggle button lets the visitor switch between light and dark. Its label is "Dark mode" and its action text reads "Switch to dark mode" or the light equivalent.
 - The choice is saved in the browser (`localStorage`) per theme. If storage is blocked, the page still works.
-- A small inline script (`snippets/fixture-color-mode-init.liquid`) sets the mode before the page paints, to avoid a flash. With "Use device setting", it follows `prefers-color-scheme`.
+- A small inline script sets the mode before the page paints, to avoid a flash. With "Use device setting", it follows `prefers-color-scheme`.
 - In dark mode, Light, Brand and Soft palettes switch to the dark colors. Soft uses the dark surface. The Dark palette keeps its own colors. The Accent palette uses Dark accent as background and Dark accent text as text.
 - The browser `theme-color` meta tag follows the current background.
 
@@ -112,7 +112,7 @@ Notes:
 
 ## Jersey print fonts
 
-The **Jersey customizer** section (`sections/fixture-jersey.liquid`) has two font pickers for the customizer preview:
+The **Jersey customizer** section has two font pickers for the customizer preview:
 
 - **Athletic print font** (default Anton regular)
 - **Classic print font** (default Libre Baskerville regular)

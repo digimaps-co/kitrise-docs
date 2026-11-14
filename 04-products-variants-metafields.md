@@ -133,7 +133,7 @@ On each product in the group, open the metafield and select all products in the 
 - Dot label and color: the theme reads the product's **Color** (or Colour, Renk) option value. If there is no color option, it uses the product title. The dot color comes from the built-in color table above.
 - The dot for the product that owns the card is marked as current.
 - On a collection page, siblings that are not in the same collection are skipped. The card's own product always stays.
-- If `custom.sibling_products` is empty, the theme falls back to the metafield `fixture.sibling_products`. This is an older namespace kept so existing data keeps working. New stores should use `custom.sibling_products` only.
+- If `custom.sibling_products` is empty, the theme reads an older metafield namespace kept so existing data keeps working. New stores should use `custom.sibling_products` only.
 - If neither metafield has more than one product, the card uses the product's own Color option values instead.
 
 Sibling dots appear on product cards. The product page itself uses the Variant picker for its own options.
