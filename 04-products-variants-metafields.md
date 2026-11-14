@@ -1,0 +1,282 @@
+---
+title: Products, variants and metafields
+---
+
+# Products, variants and metafields
+
+Kitrise by digimaps.co. This guide covers the product page, variant images, color swatches, sibling products, pricing details, pickup, payment terms, recommendations, the gift card flow and filters.
+
+All labels below are the exact names shown in the theme editor.
+
+## 1. Product page blocks
+
+The product page template is `templates/product.json`. It holds two sections:
+
+1. **Product information** (the main section). All the blocks below live here.
+2. **Related products**, placed after it.
+
+### Available blocks
+
+| Block | Limit | What it does |
+| --- | --- | --- |
+| App blocks | any | Lets you add app blocks. |
+| Vendor | 1 | Shows the product vendor. |
+| Product heading | 1 | Product title. Settings: **Show vendor** (used only when there is no Vendor block), **Show SKU** (used only when there is no SKU block). |
+| SKU | 1 | Shows the SKU of the selected variant. |
+| Price | 1 | Price, compare-at price, sale badge, unit price, and the taxes and shipping policy notes. |
+| Variant picker | 1 | One option group per product option. |
+| Quantity selector | 1 | Quantity input. |
+| Buy buttons | 1 | Add to cart, accelerated checkout, purchase options (selling plans), gift card recipient form, pickup availability, payment terms, size guide. Settings: **Show accelerated checkout**, **Size guide page**, **Show gift card recipient form**, **Show local pickup availability**. |
+| Product options and purchase | 1 | Older all-in-one block that combines variant picker, quantity and buy buttons. Use Variant picker, Quantity selector and Buy buttons for new setups. |
+| Product features | 1 | Up to three icon, heading and short text items. |
+| Complete the kit | 10 | Recommendation group. See section 8. |
+| Description | 1 | Product description. Settings: **Show description as an accordion**, **Heading**, **Open by default**. |
+| Text note | any | A rich text note. |
+| Collapsible information | any | Accordion row. Settings: **Heading**, **Content source** (Custom text and page, Description, Selected page), **Content**, **Page content**, **Open by default**. |
+| Custom Liquid | any | Your own Liquid code. |
+
+Blocks Product features, Complete the kit, Text note and Collapsible information also have **Visibility** (All products / collections, or Selected collections only) and **Show for collections**. With Selected collections only, the block is hidden when no collection is selected. On the Buy buttons block, the same two settings control only where the size guide link shows.
+
+### Block order
+
+Blocks render in the order they appear in the theme editor. Drag to reorder.
+
+The default template uses this order:
+
+1. Complete the kit groups (five groups set to Selected collections only; each stays hidden until you choose its collections and its products or collection)
+2. Vendor
+3. Product heading
+4. Price
+5. Variant picker
+6. Quantity selector
+7. Buy buttons
+8. Complete the kit group with the heading "You may also like." (Shopify complementary products)
+9. Product features
+10. Description
+11. Collapsible information: Shipping and returns (set to Selected page; it shows once you pick a page), Fit and sizing, Materials and care
+
+Notes on how order works:
+
+- A Quantity selector placed directly before Buy buttons sits inside the product form. In any other position it still works and is linked to the form.
+- A Complete the kit group set to **Below the buy buttons** always prints right after the Buy buttons block, whatever its place in the list. Only **Custom block position** follows the block order.
+- **Product details placement** (section setting, shown when Gallery position is Left or Right) can move Description, Product features, Text note and Collapsible information to **Below the product images** on desktop. Only blocks placed after the last purchase block (Variant picker, Quantity selector, Buy buttons) move. On mobile they follow the buying options.
+
+### Section settings
+
+**Layout:** Gallery position (Left, Right, Above product information), Product details placement, Desktop gallery (Classic thumbnails, One image carousel, Two-column grid, First image full width, then pairs, Gentle continuous flow), Mobile gallery (One image carousel, Two image carousel, One image per row, Gentle continuous flow), Use global product image fit, Image fit, Use global product media radius, Image corner radius, Image ratio (Square, Portrait, Landscape), Keep details visible while scrolling.
+
+**Content:** Show breadcrumb navigation, Show compact sticky cart bar.
+
+**Appearance:** Color palette, Section width, Top spacing, Bottom spacing.
+
+**Mobile:** Mobile top spacing, Mobile bottom spacing.
+
+**Advanced:** Show advanced settings (reveals Column gap), Flow speed (shown when a gallery uses Gentle continuous flow), Show denomination card design (gift cards only).
+
+Theme-wide product image look is set in Theme settings > Product media and cards (Product media background, Product media corner radius, Product image fit, Blend product images into their background).
+
+## 2. Variant images
+
+Each color (or any) variant can show its own image.
+
+1. In Shopify admin, open the product.
+2. In the variants list, click the variant, then the image slot, and choose the image for that variant. Do this for every color variant.
+3. Save.
+
+What the theme does:
+
+- On first load, the gallery opens on the selected variant's image. If the variant has none, it opens on the product's featured image.
+- When a customer picks another option, the gallery moves to that variant's image without a page reload.
+- Product gallery shows all product media (images, video, external video, 3D models) in the layout you chose.
+
+Tip: assign one image per color. Variants that share a color can share the same image.
+
+## 3. Swatches
+
+### Variant picker swatches (product page)
+
+The Variant picker shows each option value as a link. A swatch is drawn when the option value has one:
+
+- If you set a swatch image on the option value in Shopify, the theme shows the image.
+- If you set a swatch color, the theme shows that color.
+- If there is no swatch and the option is named **Color**, the theme looks the value up in a small built-in list: Forest, Olive, Ocean, Chalk, Black, White, Grey or Gray, Navy, Red (plus Turkish names Siyah, Beyaz, Gri, Lacivert, Kirmizi). Other names show text only.
+
+To control swatch colors yourself, set swatches on the option values in Shopify admin. This is the most reliable method.
+
+### Card swatches (collection, search and recommendation cards)
+
+Product cards show up to **5** color dots. Theme settings > Product media and cards controls them:
+
+- **Card color options:** Color swatches, Image thumbnails, None.
+- **Color option action:** Preview on card (picking a dot swaps image, title, price and links on the card), or Open product.
+
+Dot colors come from the option swatch color when set. Otherwise the theme uses its built-in color name table (for example Forest, Olive, Ocean, Cobalt, Graphite, Clay, Burgundy, Violet, Chalk, Black, White, Grey, Navy, Red, Blue, Green, Beige, Brown, Cream, Yellow, Orange, Pink, Purple, plus common Turkish names). A name that is not in the table gets an empty white ring, so set a swatch color for custom names.
+
+## 4. Sibling products (custom.sibling_products)
+
+Use this when each color is its own product (for example "Jacket Forest" and "Jacket Olive") and you want the cards to show them as color dots of one product.
+
+### Create the metafield
+
+1. Shopify admin > Settings > Custom data > Products > **Add definition**.
+2. Name: `Sibling products`. Namespace and key: `custom.sibling_products`.
+3. Type: **Product**, with **List of products** turned on.
+4. Save.
+
+### Fill it
+
+On each product in the group, open the metafield and select all products in the group, **including the product itself**. Do this on every product of the group so each card shows the same dots.
+
+### What the theme does
+
+- If the metafield has **more than one** product, the card shows one dot per product (max 5) and treats them as a group.
+- Dot label and color: the theme reads the product's **Color** (or Colour, Renk) option value. If there is no color option, it uses the product title. The dot color comes from the built-in color table above.
+- The dot for the product that owns the card is marked as current.
+- On a collection page, siblings that are not in the same collection are skipped. The card's own product always stays.
+- If `custom.sibling_products` is empty, the theme falls back to the metafield `fixture.sibling_products`. This is an older namespace kept so existing data keeps working. New stores should use `custom.sibling_products` only.
+- If neither metafield has more than one product, the card uses the product's own Color option values instead.
+
+Sibling dots appear on product cards. The product page itself uses the Variant picker for its own options.
+
+## 5. Unit price display
+
+Set it up in Shopify admin:
+
+1. Open the variant, and under pricing turn on **Show unit price** (wording can vary by admin version).
+2. Enter the **Total quantity** and **Unit** (for example 750 ml).
+3. Save.
+
+On the product page, the Price block prints a small line under the price: `unit price / reference unit` (for example `$4.00 / 100ml`). The reference quantity is hidden when it is 1. The line follows the selected variant and the selected purchase option. It appears only when the variant has a unit price measurement.
+
+## 6. Pickup availability
+
+Turn on local pickup in Shopify admin (Settings > Shipping and delivery > Local pickup) and enable pickup on the locations that offer it.
+
+In the theme editor, open the Buy buttons block and check **Show local pickup availability** (on by default).
+
+What shows:
+
+- A **View stores** disclosure under the buttons, listing each pickup location with its name, whether it is **Available for pickup** (with the pickup time) or not, and its address.
+- It updates when the customer changes variant.
+- Nothing shows when no location has pickup enabled.
+- It is never shown for gift cards.
+
+## 7. Payment terms
+
+The theme prints Shopify's payment terms banner (Shop Pay Installments) inside the product form, below the buttons. It appears only when Shop Pay Installments is available for your store and the product. There is no theme setting for it. It refreshes when the variant changes.
+
+Accelerated checkout buttons use the Buy buttons setting **Show accelerated checkout** (on by default). They show only for available variants, and not on gift card products while **Show gift card recipient form** is on.
+
+## 8. Complementary and related recommendations (Search & Discovery)
+
+### Install and configure the app
+
+1. Install **Shopify Search & Discovery** from the Shopify App Store.
+2. Open it and go to **Recommendations**.
+3. For complementary products, open **Complementary products**, pick a product, and add its complements. Save.
+4. For related products, Shopify generates them automatically. You can use the app to exclude products.
+
+### Complete the kit block (complementary)
+
+Add or edit a **Complete the kit** block in Product information. You can add up to 10 groups.
+
+Settings:
+
+- **Visibility** and **Show for collections**: the first group whose collections match the product is used. A group set to All products is the fallback. Groups with an empty source are skipped. Reorder groups to change priority.
+- **Heading**
+- **Source:** Selected products, Collection, Shopify complementary products, Selected + Shopify complementary.
+  - Shopify complementary products uses what you set in Search & Discovery.
+  - Selected + Shopify complementary keeps your selected products first, then adds the Shopify ones.
+  - The collection is used in Collection mode. In the two Shopify modes, only your selected products and Shopify's suggestions are shown; if none remain, the group hides.
+- **Products:** choose up to 12. The current product is excluded.
+- **Collection**
+- **Position on product page:** Below the buy buttons, Full width below product, Custom block position.
+- **Cards visible on desktop:** 3 columns or 4 columns. Use 3 beside the photos and 4 for full width.
+- **Photo shape:** Square, Portrait, Landscape.
+- **Option spacing:** Compact, Comfortable.
+
+Rules the theme always applies: sold-out products and products excluded in Theme settings > Product recommendations are skipped, duplicates are removed, and the list is capped at 12. On mobile, customers swipe one card at a time.
+
+### Related products section
+
+The **Related products** section sits below Product information. It loads Shopify's related recommendations. Settings: **Heading**, **Maximum products** (2 to 10, default 6), **Columns on large screens** (2 to 4), **Top spacing**, **Bottom spacing**. If Shopify returns nothing, the section hides itself and the theme does not fill it from other collections.
+
+### Excluding products from recommendations
+
+In Theme settings > Product recommendations:
+
+- **Hide jersey customizer products** (on by default). Keeps products that use the jersey template or have the tag `custom-jersey` out of recommendations.
+- **Collection to exclude.** Products in this collection never appear in recommendations.
+
+Also, any product with the tag `exclude-recommendations` is always excluded. These rules apply to Complete the kit, Related products and cart recommendations.
+
+### Cart recommendations
+
+Theme settings > Cart recommendations has its own settings (**Show cart recommendations**, **Heading**, **Source**, **Products**, **Collection**, **Desktop layout**, **Mobile layout**, **Product photo size**, **Option spacing**). The **Source** options are the same as in Complete the kit.
+
+## 9. Gift card product and recipient form
+
+### Create the product
+
+1. In Shopify admin, add a product of type gift card (Products > Add product, then turn on **This is a gift card**), and set the denominations as variants.
+2. Under Theme template, choose **product.gift-card**.
+
+### Template
+
+`templates/product.gift-card.json` holds: Vendor, Product heading, Price, Variant picker, Quantity selector, Buy buttons, Description, a Collapsible information block called **Digital delivery**, then the Related products section.
+
+### Recipient form
+
+In the Buy buttons block, **Show gift card recipient form** (on by default) adds a checkbox **Send this gift card to someone**. When ticked, the form shows:
+
+- Recipient email
+- Recipient name
+- Message (up to 200 characters)
+- Send on (optional date; leave empty to send now)
+
+Email and date errors show inline. When the recipient form is on, accelerated checkout buttons are not shown. The pickup disclosure and size guide are never shown for gift cards.
+
+### Denomination card preview
+
+In Product information, under **Advanced**, turn on **Show denomination card design**. The gallery is replaced with a card showing your store name, the words "Digital gift card" and the amount of the selected variant. When the product also has media, the card is shown smaller above the gallery. The preset template has this on. Turn it off to use product media only.
+
+### Gift card page
+
+`templates/gift_card.liquid` is the page the customer opens from the email. It shows the shop name, the current balance, the original amount when the balance differs, the expiry date and scheduled send date when set, the code (with a **Copy code** button), a QR code, a **Print gift card** button, a link back to the store and an Add to Apple Wallet link when one exists. Statuses for disabled and expired cards are shown. The page does not use the store header or footer.
+
+## 10. Filters (Search & Discovery)
+
+Filters on collection and search pages come from Shopify Search & Discovery.
+
+### Set up
+
+1. Open **Search & Discovery** > **Filters**.
+2. Click **Add filter** and pick from: Availability, Price, Product type, Vendor, Tag, product options such as Color and Size, and product metafields that you have enabled as filters.
+3. Reorder them and save. They appear on collection and search pages straight away.
+
+### What the theme shows
+
+On the **Collection page** section:
+
+- **Show filters** (on by default) turns filters on or off.
+- **Filter layout:** Sidebar or Drawer.
+- Types handled: list and boolean (checkboxes with counts, values with no matches are disabled) and price range (From and To fields).
+- A filter named Color, Colour, Renk, Couleur, Farbe or Colore (or with a color parameter), or any value with a swatch, shows a color chip next to the label.
+- Active filters show as removable chips and a count on the filter title. The Availability filter and any filter with active values open by default.
+- **Show sorting** controls the sort menu. **Products per page** (8 to 48) and **Desktop columns** control the grid.
+
+On the **Search results** section: **Show search filters** (on by default). Same list, boolean and price range types, with an **Apply filters** button.
+
+Tip: create swatches for Color option values in Shopify so filter chips show the right color.
+
+## Quick checklist
+
+- Each color variant has its own image.
+- Color option values have swatch colors or use a name from the built-in list.
+- `custom.sibling_products` is a list of products, set on every product of the group (when you sell colors as separate products).
+- Unit price measurement set on variants that need it.
+- Local pickup enabled on locations and on the Buy buttons block.
+- Shop Pay Installments enabled in Shopify, if you want the payment terms banner.
+- Complementary products configured in Search & Discovery, and a Complete the kit group set to Shopify complementary products.
+- Gift card product uses the `product.gift-card` template.
+- Filters configured in Search & Discovery.
