@@ -180,7 +180,7 @@ A product row from one collection or a hand-picked list, with swipe or carousel.
 
 - Templates: Any template and any section group.
 - Blocks: None.
-- Key settings: Collection, Products to show, Enable desktop carousel, Show quick add
+- Key settings: Collection, Products to show, Enable desktop carousel, Show quick add (applies when the section is placed on the cart page)
 
 ## Featured product
 
