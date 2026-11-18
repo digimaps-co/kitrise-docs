@@ -51,7 +51,7 @@ Values:
 - **Accent**: uses the Accent color as background and Accent text as text color.
 - **Brand colors**: uses the Background and Text colors from Theme settings > Colors. In most sections the setting info says: "Choose Brand colors to use the background and text colors from Theme settings > Colors."
 
-Not every section offers every value. For example, some sections offer only Brand colors, Soft and Accent, and others add Light and Dark. Some sections name the options Brand, White or Soft neutral. The editor shows only the options a section supports.
+Not every section offers every value. For example, Hotspots offers only Brand, Light and Soft, and most other sections add Dark and Accent. Some sections name the options Brand, White or Soft neutral. The editor shows only the options a section supports.
 
 Each section lists its own palette options in its settings.
 
