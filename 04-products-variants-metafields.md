@@ -67,9 +67,7 @@ Notes on how order works:
 
 **Content:** Show breadcrumb navigation, Show compact sticky cart bar.
 
-**Appearance:** Color palette, Section width, Top spacing, Bottom spacing.
-
-**Mobile:** Mobile top spacing, Mobile bottom spacing.
+**Appearance:** Color palette, Top spacing, Bottom spacing.
 
 **Advanced:** Show advanced settings (reveals Column gap), Flow speed (shown when a gallery uses Gentle continuous flow), Show denomination card design (gift cards only).
 
@@ -136,7 +134,7 @@ On each product in the group, open the metafield and select all products in the 
 - If `custom.sibling_products` is empty, the theme reads an older metafield namespace kept so existing data keeps working. New stores should use `custom.sibling_products` only.
 - If neither metafield has more than one product, the card uses the product's own Color option values instead.
 
-Sibling dots appear on product cards. The product page itself uses the Variant picker for its own options.
+Sibling colors appear on product cards and in the Color row of the product page Variant picker. On the product page, the product's own color stays selected and each sibling links to its own product page with the same size (or other non-color choices) selected when that product has it.
 
 ## 5. Unit price display
 
@@ -199,7 +197,7 @@ Rules the theme always applies: sold-out products and products excluded in Theme
 
 ### Related products section
 
-The **Related products** section sits below Product information. It loads Shopify's related recommendations. Settings: **Heading**, **Maximum products** (2 to 10, default 6), **Columns on large screens** (2 to 4), **Top spacing**, **Bottom spacing**. If Shopify returns nothing, the section hides itself and the theme does not fill it from other collections.
+The **Related products** section sits below Product information. It loads Shopify's related recommendations. Settings: **Heading**, **Maximum products** (2 to 10, default 6), **Columns on large screens** (2 to 4). If Shopify returns nothing, the section hides itself and the theme does not fill it from other collections.
 
 ### Excluding products from recommendations
 

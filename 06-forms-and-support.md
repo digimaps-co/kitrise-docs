@@ -25,7 +25,7 @@ Settings you can change:
 | Show optional order number | Adds an optional order number field. |
 | Color palette, Heading size | Light, Soft, Dark, Accent or Brand colors, and Standard or Large heading. |
 | Mobile top spacing, Mobile bottom spacing | Spacing on small screens. |
-| Show advanced settings | Reveals Section width, Top spacing and Bottom spacing. |
+| Show advanced settings | Reveals Top spacing and Bottom spacing. |
 
 ### Topics and the preselected topic
 
@@ -72,7 +72,7 @@ Add the **Email signup** section to any page.
 - Image and Mobile image (optional), shown in the Split layout only
 - Consent and privacy text
 - Color palette: Light, Soft, Dark, Accent or Brand colors
-- Mobile spacing, and Advanced controls for width and desktop spacing
+- Advanced controls for desktop spacing
 
 ### Popup
 
@@ -87,7 +87,7 @@ The **Welcome popup** section is included in the footer group, so one popup cove
 - Version: change it when you want returning visitors to see a new message.
 - Content type: **Newsletter signup** shows an email form. **Message and link** shows a button that goes to the **Button link** you set.
 - Subheading, Heading, Description, Button label, Dismiss button label, Signup information (newsletter mode).
-- Desktop image, Mobile image, Show image on mobile, Image position, Image width, Text alignment, Color palette, Maximum width, Corner radius, Desktop and Mobile heading size, Background dimming.
+- Desktop image, Mobile image, Show image on mobile, Image position, Image width, Text alignment, Color palette, Mobile heading size, Background dimming.
 
 Popup signups carry the `newsletter` tag, like all other signups.
 

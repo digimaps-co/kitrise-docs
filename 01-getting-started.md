@@ -33,7 +33,7 @@ Work through these steps in the theme editor.
 3. **Colors.** Theme settings > **Colors**: Text, Background, Secondary background, Secondary background text, Accent, Highlight, Highlight text, Accent text. For a dark appearance, use **Color mode**: **Enable light and dark mode**, **Default appearance**, and the dark color settings.
 4. **Typography.** Theme settings > **Typography**: **Body font**, **Body size**, **Additional body text scaling**, **Heading font**, **Heading size**.
 5. **Menus.** Create `main-menu` and `footer` in **Content > Menus**. In the Header, check **Main menu** and **Search shortcuts**. In the Footer, add or edit **Footer menu** blocks and set **Footer menu** and **Heading**.
-6. **Home page.** Open the Home page in the editor. It ships with these sections, in order: Hero, Media collections, Collection tabs, Jersey customizer, Image comparison, Media collections, Bundle builder, Campaign showcase, Hotspots, Lifestyle showcase, Video, Blog posts, Icon benefits. Pick collections, images and products in each one. Remove sections you do not need.
+6. **Home page.** Open the Home page in the editor. It ships with these sections, in order: Hero, Media collections, Collection tabs, Jersey customizer, Image comparison, Media collections, Kit builder, Campaign showcase, Hotspots, Lifestyle showcase, Video, Blog posts, Icon benefits. Pick collections, images and products in each one. Remove sections you do not need.
 7. **Other settings worth a look.** Layout (**Page width**), Shapes, Product cards, Cart (**Cart type**), and Social media.
 
 ## Where to find each template

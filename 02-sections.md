@@ -4,7 +4,7 @@ title: Kitrise sections
 
 # Kitrise sections
 
-Kitrise by digimaps.co has 46 sections that can be added from the theme editor. Entries are in alphabetical order by name. Most sections also have color palette and spacing settings, which are not repeated unless they matter.
+Kitrise by digimaps.co has 31 sections that can be added from the theme editor. Entries are in alphabetical order by name. Most sections also have a color palette setting, and many have spacing settings. These are not repeated unless they matter.
 
 ## Announcement bar
 
@@ -12,7 +12,7 @@ A thin message bar with a short line of text, an optional link and icon.
 
 - Templates: Header and footer section groups only.
 - Blocks: Message (up to 3)
-- Key settings: Color palette, Text size, Show on mobile
+- Key settings: Color palette, Show on mobile
 
 ## Apps
 
@@ -20,15 +20,7 @@ A place to add Shopify app blocks anywhere on a page.
 
 - Templates: Any template and any section group.
 - Blocks: App blocks
-- Key settings: Color palette, Section width, Top spacing, Bottom spacing
-
-## Before and after
-
-A before and after view made of two image states, with a slider handle.
-
-- Templates: Any template and any section group.
-- Blocks: Comparison state (up to 2)
-- Key settings: Layout, Before treatment, Comparison handle accessibility label, Button link
+- Key settings: Color palette
 
 ## Blog posts
 
@@ -38,22 +30,6 @@ A grid or swipe row of recent articles from one blog.
 - Blocks: None.
 - Key settings: Blog, Number to show, Columns on desktop, Card style
 
-## Bundle builder
-
-Lets shoppers pick a set number of products and add them to the cart together.
-
-- Templates: Any template and any section group.
-- Blocks: Product (up to 8)
-- Key settings: Products to choose, Offer note, Product card layout, Desktop product columns
-
-## Campaign pair
-
-Two large campaign panels side by side, each with an image, text and button.
-
-- Templates: Any template and any section group.
-- Blocks: Panel (up to 2)
-- Key settings: Height, Image position, Desktop image width, Heading and button case
-
 ## Campaign showcase
 
 A campaign intro with a large image panel and a product list beside it.
@@ -61,22 +37,6 @@ A campaign intro with a large image panel and a product list beside it.
 - Templates: Any template. Not available in header or footer section groups.
 - Blocks: Product (up to 4)
 - Key settings: Layout, Button link, Sale badge style, Show compare-at price
-
-## Category grid
-
-A grid of category cards that link to collections or custom links.
-
-- Templates: Any template and any section group.
-- Blocks: Category (up to 50)
-- Key settings: Card style, Desktop columns, Layout, Image tone
-
-## Collection banner
-
-A banner for collection pages with title, breadcrumbs, description and feature items.
-
-- Templates: Any template and any section group.
-- Blocks: Feature (up to 3)
-- Key settings: Layout, Image, Overlay opacity, Show breadcrumbs
 
 ## Collection cards
 
@@ -86,13 +46,7 @@ A set of collection cards chosen by the merchant.
 - Blocks: Collection (up to 16)
 - Key settings: Layout, Columns on desktop, Card style, Show product count
 
-## Collection list
-
-The collection list page: a grid of all collections.
-
-- Templates: Any template and any section group.
-- Blocks: None.
-- Key settings: Heading, Columns on desktop, Image ratio, Empty state button label
+Each card can link to a collection or to a custom link, so this section also covers a grid of category cards.
 
 ## Collection page
 
@@ -101,6 +55,8 @@ The main product grid of the collection template, with filters, sorting and opti
 - Templates: Only on the collection template.
 - Blocks: Collection banner, Custom Liquid (1), up to 6 in total
 - Key settings: Filter layout, Desktop columns, Products per page, Show filters
+
+The page also shows the collection title. Show image and Show description control the collection image and description. A Collection banner block adds a promo banner inside the grid.
 
 ## Collection tabs
 
@@ -132,7 +88,7 @@ A free area for custom Liquid, HTML and CSS code.
 
 - Templates: Any template and any section group.
 - Blocks: None.
-- Key settings: Liquid code, Color palette, Section width
+- Key settings: Liquid code, Color palette
 
 ## Custom section
 
@@ -150,14 +106,6 @@ An email signup form with optional image and consent text.
 - Blocks: Custom Liquid (1)
 - Key settings: Layout, Image, Consent and privacy text, Color palette
 
-## Empty state cards
-
-Cards that explain empty states, for example an empty cart or no results.
-
-- Templates: Any template and any section group.
-- Blocks: State card (up to 8)
-- Key settings: Heading, Use uppercase headings and larger cards, Enable spacious layout, Color palette
-
 ## FAQ
 
 Frequently asked questions as an accordion.
@@ -165,22 +113,6 @@ Frequently asked questions as an accordion.
 - Templates: Any template and any section group.
 - Blocks: Question (up to 16)
 - Key settings: Layout, Open first answer, Link label, Color palette
-
-## Feature strip
-
-A strip of up to four product features with icons.
-
-- Templates: Any template and any section group.
-- Blocks: Feature (up to 4)
-- Key settings: Accessible label, Color palette, Top padding
-
-## Featured collection
-
-A product row from one collection or a hand-picked list, with swipe or carousel.
-
-- Templates: Any template and any section group.
-- Blocks: None.
-- Key settings: Collection, Products to show, Enable desktop carousel, Show quick add (applies when the section is placed on the cart page)
 
 ## Featured product
 
@@ -197,6 +129,8 @@ A grid of products from a collection or a hand-picked list, with an optional fea
 - Templates: Any template and any section group.
 - Blocks: None.
 - Key settings: Collection, Hand-pick products, Maximum number, Card style
+
+For a product row from one collection, pick it in Collection and set Layout to Horizontal carousel or Grid.
 
 ## Hero
 
@@ -220,7 +154,7 @@ A short row of icon benefits, such as shipping, returns or support.
 
 - Templates: Any template and any section group.
 - Blocks: Benefit (up to 5)
-- Key settings: Layout, Heading, Color palette, Content width
+- Key settings: Layout, Heading, Color palette
 
 ## Image comparison
 
@@ -237,6 +171,14 @@ A personalizer for sports jerseys: name, number or player, print color and live 
 - Templates: Any template. Not available in header or footer section groups.
 - Blocks: Jersey model (up to 15), Print color (up to 8), Player (up to 20), App blocks, Custom Liquid, up to 50 in total
 - Key settings: Printing pricing, Use name only, Use name and number, Use player selection
+
+## Kit builder
+
+Lets shoppers pick a set number of products and add them to the cart together.
+
+- Templates: Any template and any section group.
+- Blocks: Product (up to 8)
+- Key settings: Products to choose, Offer note, Product card layout, Desktop product columns
 
 ## Lifestyle showcase
 
@@ -270,22 +212,6 @@ Shows the content of a Shopify page.
 - Blocks: None.
 - Key settings: Page content, Show page heading, Layout, Heading size
 
-## Page header
-
-A page title area with breadcrumbs, subheading, heading and taglines.
-
-- Templates: Any template and any section group.
-- Blocks: None.
-- Key settings: Show breadcrumbs, Heading, Heading size, Color palette
-
-## Principles
-
-A short list of principles, each with a heading and text.
-
-- Templates: Any template and any section group.
-- Blocks: Principle (up to 6)
-- Key settings: Heading, Enable editorial spacing, Color palette
-
 ## Product comparison
 
 A comparison table of selected products with feature rows.
@@ -293,14 +219,6 @@ A comparison table of selected products with feature rows.
 - Templates: Any template. Not available in header or footer section groups.
 - Blocks: Feature row (up to 10)
 - Key settings: Products, Offer a differences-only filter, Highlighted column, Show prices
-
-## Product details
-
-Collapsible rows on the product page, with an image and an optional numbered feature list.
-
-- Templates: Only on the product template.
-- Blocks: Row
-- Key settings: Show the product description as the first row, Image, Show the numbered feature list, Feature list heading
 
 ## Product information
 
@@ -310,6 +228,8 @@ The main product template section: gallery, product info and buy box.
 - Blocks: App blocks, Product heading, Price, Vendor, SKU, Variant picker, Quantity selector, Buy buttons, Product options and purchase, Product features, Complete the kit, Description, Text note, Collapsible information, Custom Liquid
 - Key settings: Gallery position, Desktop gallery, Show breadcrumb navigation, Show compact sticky cart bar
 
+Add Collapsible information blocks for rows of details such as shipping and returns or materials and care.
+
 ## Product kit
 
 A product kit: an image beside a short list of products.
@@ -318,22 +238,6 @@ A product kit: an image beside a short list of products.
 - Blocks: Product (up to 4)
 - Key settings: Layout, Image position, Image ratio, Note
 
-## Product set
-
-A set of products with a summary and an add-set button.
-
-- Templates: Any template and any section group.
-- Blocks: None.
-- Key settings: Product collection, Products, Add set button label, Band style
-
-## Quote
-
-A quote with attribution, an image and an optional story text.
-
-- Templates: Any template and any section group.
-- Blocks: None.
-- Key settings: Layout, Quote, Attribution name, Story text
-
 ## Related products
 
 Product recommendations on the product page.
@@ -341,22 +245,6 @@ Product recommendations on the product page.
 - Templates: Only on the product template.
 - Blocks: None.
 - Key settings: Heading, Maximum products, Columns on large screens
-
-## Statistics
-
-Numeric statistics beside an image or video.
-
-- Templates: Any template and any section group.
-- Blocks: Stat (up to 4)
-- Key settings: Image position, Video URL, Heading style, Link over the image
-
-## Story grid
-
-A grid of story cards from a blog or from manual blocks.
-
-- Templates: Any template and any section group.
-- Blocks: Story (up to 50)
-- Key settings: Blog, Articles to show, Card layout, Enable desktop carousel
 
 ## Video
 
