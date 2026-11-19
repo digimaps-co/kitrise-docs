@@ -8,7 +8,7 @@ Kitrise is built and supported by digimaps.co.
 
 ## Contact
 
-Email **admin@digimaps.co** with:
+Email **support@digimaps.co** with:
 
 - your store URL (the .myshopify.com address),
 - the theme version (Theme settings, Theme information),

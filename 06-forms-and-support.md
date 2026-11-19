@@ -123,7 +123,7 @@ Customers can leave a note for your team with their order.
 
 **How to get help**
 
-Email admin@digimaps.co. Include:
+Email support@digimaps.co. Include:
 
 - Your store URL
 - The theme version (Theme settings shows `1.0.0` for the first release)
