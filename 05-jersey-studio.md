@@ -47,7 +47,7 @@ How it works:
 - A legacy option named `Patch`, `Badge`, `Arma` or `Rozet` is supported. Only the variants whose value is "No patch", "None" and similar are used.
 - Other options (for example a second color option) appear under the size step.
 
-Sizes come from the real product variants. Set **Size guide page** (a page opened in a dialog) or **Size guide link** to show a "Size guide" link in the size step.
+Sizes come from the real product variants. Sizes and other option values are shown as buttons, and colors as a swatch with the color name. The steps are identified by their titles (for example "Find your fit" and "Make it yours"), not by numbers. Set **Size guide page** (a page opened in a dialog) or **Size guide link** to show a "Size guide" link in the size step.
 
 ## 3. Add jersey model blocks
 
@@ -85,7 +85,7 @@ Add **Player** blocks (up to 20) with **Player name**, **Shirt number** and **Sh
 
 ## Print modes in the storefront
 
-Step 4 "Make it yours" offers up to four modes. Each can be hidden with the checkboxes **Use name only**, **Use name and number**, **Use player selection**. "No personalization" is always available.
+The "Make it yours" step offers up to four modes. Each can be hidden with the checkboxes **Use name only**, **Use name and number**, **Use player selection**. "No personalization" is always available.
 
 | Mode | Fields shown | Variant used |
 | --- | --- | --- |
@@ -117,6 +117,8 @@ On add to cart the theme sends these properties with the variant:
 | Print color | When a name or number is printed. Custom colors read "Custom color: #HEX". |
 | `_Jersey name font`, `_Jersey name size`, `_Jersey name position` | When a name is printed. Font holds the print style. |
 | `_Jersey number font`, `_Jersey number size`, `_Jersey number position` | When a number is printed. |
+
+In the cart, a line of a jersey product shows a one-line summary under the product title: the product type, the size, then the printed name and number, for example "Home kit · M · KAYA 10". The size is read from the Size option (or `Beden`). Other options and details, such as the personalization type and print color, stay listed below it.
 
 Properties starting with an underscore are hidden from the cart display. The label text for the visible properties comes from the theme locale strings (`property_audience`, `property_player`, `property_name`, `property_number`, `property_color`). If the theme cart script is not available, the same properties are written as hidden form fields and the form submits normally.
 

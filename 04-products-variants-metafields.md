@@ -93,7 +93,7 @@ Tip: assign one image per color. Variants that share a color can share the same 
 
 ### Variant picker swatches (product page)
 
-The Variant picker shows each option value as a link. A swatch is drawn when the option value has one:
+The Variant picker shows each option value as a button, so sizes and other options appear as buttons. A color value shows a swatch with the color name. A swatch is drawn when the option value has one:
 
 - If you set a swatch image on the option value in Shopify, the theme shows the image.
 - If you set a swatch color, the theme shows that color.
@@ -109,6 +109,12 @@ Product cards show up to **5** color dots. Theme settings > Product media and ca
 - **Color option action:** Preview on card (picking a dot swaps image, title, price and links on the card), or Open product.
 
 Dot colors come from the option swatch color when set. Otherwise the theme uses its built-in color name table (for example Forest, Olive, Ocean, Cobalt, Graphite, Clay, Burgundy, Violet, Chalk, Black, White, Grey, Navy, Red, Blue, Green, Beige, Brown, Cream, Yellow, Orange, Pink, Purple, plus common Turkish names). A name that is not in the table gets an empty white ring, so set a swatch color for custom names.
+
+### Kit label on product cards
+
+Theme settings > **Product cards** > **Show kit label** (on by default). Help text: "Shows the product type and a print-ready note on products that use the jersey template."
+
+When it is on, a card of a product that uses the `jersey` template shows a line under the product title: the product type followed by "Print-ready", for example "Home kit · Print-ready". The first part is the **Product type** field of the product in Shopify admin, so fill it with the kit kind (Home kit, Away kit, Training kit and so on). If the field is empty, only "Print-ready" is shown. Products that do not use the jersey template show no such line.
 
 ## 4. Sibling products (custom.sibling_products)
 
@@ -193,7 +199,7 @@ Settings:
 - **Photo shape:** Square, Portrait, Landscape.
 - **Option spacing:** Compact, Comfortable.
 
-Rules the theme always applies: sold-out products and products excluded in Theme settings > Product recommendations are skipped, duplicates are removed, and the list is capped at 12. On mobile, customers swipe one card at a time.
+Rules the theme always applies: sold-out products and products excluded in Theme settings > Product recommendations are skipped, duplicates are removed, and the list is capped at 12. On mobile, customers swipe one card at a time. Option values on these cards are shown as buttons, and colors as a swatch with the color name. The cards do not use dropdowns.
 
 ### Related products section
 
@@ -210,7 +216,7 @@ Also, any product with the tag `exclude-recommendations` is always excluded. The
 
 ### Cart recommendations
 
-Theme settings > Cart recommendations has its own settings (**Show cart recommendations**, **Heading**, **Source**, **Products**, **Collection**, **Desktop layout**, **Mobile layout**, **Product photo size**, **Option spacing**). The **Source** options are the same as in Complete the kit.
+Theme settings > Cart recommendations has its own settings (**Show cart recommendations**, **Heading**, **Source**, **Products**, **Collection**, **Desktop layout**, **Mobile layout**, **Product photo size**, **Option spacing**). The **Source** options are the same as in Complete the kit. The recommendation cards show option values as buttons, and colors as a swatch with the color name.
 
 ## 9. Gift card product and recipient form
 
