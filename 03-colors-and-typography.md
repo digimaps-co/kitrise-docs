@@ -98,10 +98,10 @@ Theme settings > **Typography**
 
 | Setting | Default | Notes |
 | --- | --- | --- |
-| Body font | Shopify font picker, Sans-serif regular | Font picker for body text. |
+| Body font | Shopify font picker, Barlow Regular | Font picker for body text. |
 | Body size | 16 | Base size in px. |
 | Additional body text scaling | 100 | Percent scale on body text sizes. |
-| Heading font | Shopify font picker, Sans-serif bold | Font picker for headings. |
+| Heading font | Shopify font picker, Barlow Condensed Bold | Font picker for headings. |
 | Heading size | 100 | Percent scale on all heading sizes. |
 
 Notes:
