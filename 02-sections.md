@@ -54,9 +54,15 @@ The main product grid of the collection template, with filters, sorting and opti
 
 - Templates: Only on the collection template.
 - Blocks: Collection banner, Custom Liquid (1), up to 6 in total
-- Key settings: Filter layout, Desktop columns, Products per page, Show filters
+- Key settings: Filter layout, Desktop columns, Products per page, Show filters, Grid style
 
-The page also shows the collection title. Show image and Show description control the collection image and description. A Collection banner block adds a promo banner inside the grid.
+The page opens with a title band that holds the collection title, the description (**Show description**) and the product count. With **Show image** and **Show image in title band** (`header_image`, off by default) on, the collection image sits at the right of the band. The collection needs an image for it to appear.
+
+Under the band, **Show kit type chips** (`show_type_chips`, on by default) adds quick filters by product type. They need **Show filters** on and the Product type filter active in Search & Discovery (see "Filters (Search & Discovery)" in Products, variants and metafields).
+
+**Grid style** (`grid_style`) is **Ruled** (default, cards separated by thin lines with no gap) or **Spaced** (cards separated by a gap).
+
+A Collection banner block adds a promo banner inside the grid.
 
 ## Collection tabs
 
@@ -164,13 +170,15 @@ A before and after image slider with a draggable handle.
 - Blocks: None.
 - Key settings: Before, After, Initial reveal position, Show handle instructions
 
+Under Show advanced settings, **Follow theme media radius** uses the Media corner radius from Theme settings > Shapes. Turn it off to set **Corner rounding** for this section.
+
 ## Jersey customizer
 
 A personalizer for sports jerseys: name, number or player, print color and live preview.
 
 - Templates: Any template. Not available in header or footer section groups.
 - Blocks: Jersey model (up to 15), Print color (up to 8), Player (up to 20), App blocks, Custom Liquid, up to 50 in total
-- Key settings: Printing pricing, Use name only, Use name and number, Use player selection
+- Key settings: Printing pricing, Use name only, Use name and number, Use player selection, Allow squad orders
 
 ## Kit builder
 
