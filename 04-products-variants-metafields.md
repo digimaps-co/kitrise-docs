@@ -69,7 +69,9 @@ Notes on how order works:
 
 **Appearance:** Color palette, Top spacing, Bottom spacing.
 
-**Advanced:** Show advanced settings (reveals Column gap), Flow speed (shown when a gallery uses Gentle continuous flow), Show denomination card design (gift cards only).
+**Advanced:** Show advanced settings (reveals Column gap), Flow speed and Move images automatically (both shown when a gallery uses Gentle continuous flow), Show denomination card design (gift cards only).
+
+**Move images automatically** is off by default. Turn it on and the Gentle continuous flow gallery moves by itself, at the speed set in **Flow speed**. It has no effect on the other gallery layouts. It does not start for visitors who ask their device to reduce motion, or when the product media includes anything other than images.
 
 Theme-wide product image look is set in Theme settings > Product media and cards (Product media background, Product image fit, Blend product images into their background). The gallery corner radius follows **Media corner radius** in Theme settings > **Shapes** while **Use global product media radius** is on. Turn it off to set **Image corner radius** for this section only. The **Featured product** section has the same two settings.
 
@@ -112,9 +114,9 @@ Dot colors come from the option swatch color when set. Otherwise the theme uses 
 
 ### Kit tag on product cards and cart lines
 
-Theme settings > **Product cards** > **Show kit label** (`card_show_kit_label`, on by default). Help text: "Shows the product type and a print-ready note on products that use the jersey template."
+Theme settings > **Product cards** > **Show kit label** (`card_show_kit_label`, on by default). Help text: "Shows the product type on every product and a print-ready note on jersey products."
 
-When it is on, the card of a product that uses the `jersey` template shows a small sewn-label tag over the product image with the product type, followed by a second accent tag that reads "Print-ready", for example "Home kit" and "Print-ready". The text comes from the **Product type** field of the product in Shopify admin, so fill it with the kit kind (Home kit, Away kit, Training kit and so on). If the field is empty, no tag is shown at all, including "Print-ready". Products that do not use the jersey template show no tag.
+When it is on, the card of every product that has a **Product type** shows a small sewn-label tag over the product image with that type. A product that uses the `jersey` template also gets a second accent tag that reads "Print-ready", for example "Home kit" and "Print-ready". The text comes from the **Product type** field of the product in Shopify admin, so fill it with the kit kind (Home kit, Away kit, Training kit and so on). If the field is empty, no tag is shown at all, including "Print-ready". Products without a product type show no tag.
 
 In the cart, a kit line (a product on the `jersey` template, or a line with the hidden jersey properties) shows the product type as the same tag above the product title, without the "Print-ready" tag. This tag in the cart does not depend on **Show kit label**.
 
@@ -272,7 +274,7 @@ On the **Collection page** section:
 - **Show kit type chips** (`show_type_chips`, on by default, shown when Show filters is on) adds a row of quick filter chips above the product grid, one per product type, plus an **All** chip. It is built from the **Product type** storefront filter, so add Product type under Search & Discovery > Filters first. The row is shown only when the collection has more than one product type.
 - **Show sorting** controls the sort menu. **Products per page** (8 to 48) and **Desktop columns** control the grid.
 
-On the **Search results** section: **Show search filters** (on by default). Same list, boolean and price range types, with an **Apply filters** button.
+On the **Search results** section: **Show search filters** (on by default). Filters open in the same drawer as on collection pages: a **Filter** button above the results opens it, with the same list, boolean and price range types. Active filters show as removable chips above the results. The sort menu is next to the button. Filters and sorting are shown once a search has results or an active filter.
 
 Tip: create swatches for Color option values in Shopify so filter chips show the right color.
 

@@ -19,6 +19,7 @@ Settings you can change:
 | Layout | Split or Reading width. |
 | Subheading, Heading, Text | Text above the form. If the heading is empty, a default "Contact" heading is used. |
 | Contact details | Rich text shown under the intro text. Use it for your real contact information and reply times. |
+| Image | Optional picture. It is shown under the heading, beside the form on larger screens. |
 | Show phone field | Adds a phone field. |
 | Show inquiry topic | Adds a topic dropdown. |
 | Preselected topic | Topic chosen when the page loads. Only shown when the topic field is on. |
