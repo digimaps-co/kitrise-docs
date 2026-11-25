@@ -30,6 +30,7 @@ Theme settings > **Product cards**
 - **Sale badge background**: leave empty to use Highlight.
 - **Sale badge text**: leave empty and the theme picks white or black, whichever has the higher contrast against the badge background.
 - **Sale badge border**: leave empty to use Highlight.
+- **Sale badge indicator**: **Icon** or **Text**. New installs use **Text**. A store that already saved a choice keeps it.
 
 ### Product media colors
 

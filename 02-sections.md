@@ -78,7 +78,7 @@ A contact form with optional phone, topic and order number fields.
 
 - Templates: Any template and any section group.
 - Blocks: None.
-- Key settings: Layout, Show phone field, Show inquiry topic, Show optional order number
+- Key settings: Layout, Image, Show phone field, Show inquiry topic, Show optional order number
 
 ## Countdown timer
 
@@ -220,6 +220,8 @@ Shows the content of a Shopify page.
 - Blocks: None.
 - Key settings: Page content, Show page heading, Layout, Heading size
 
+With the split layout, the heading column stays in view on desktop while the visitor scrolls long page content beside it.
+
 ## Product comparison
 
 A comparison table of selected products with feature rows.
@@ -269,3 +271,40 @@ A welcome popup with text, image and button.
 - Templates: Any template. Not available in the header section group.
 - Blocks: None.
 - Key settings: Show on the online store, Open trigger, Delay before opening, Show again
+
+## Header, search, article and 404 sections
+
+These four sections belong to fixed places in the theme and are not part of the count above. Open the matching page in the theme editor to change them.
+
+### Header
+
+Open the **Header group** and select the **Header** section.
+
+**Two-level dropdown style** is hidden when the layout is the centered logo with drawer navigation. It chooses how a desktop menu item with one level of sub-links opens. The options are **Text list** and **Image tiles**. The default in the theme's own header group is **Image tiles**. A header that does not have the setting saved uses **Text list**. The help text reads: "Menu items with one level of sub-links. Tiles show the collection or product image next to each title. Items with three levels keep the mega menu."
+
+With **Image tiles**:
+
+- Each sub-link that points to a collection or a product shows a tile with its image and title. The image is the collection or product image. If a collection has no image of its own, the first image of its first product is used.
+- At most six tiles are shown. Further links with an image, and all links without an image (for example a page or a blog), are listed as plain text links below the tiles.
+- Menu items with three levels keep the mega menu.
+- The campaign tile appears beside the tiles for the menu item whose title you enter in **Navigation item for campaign**. The campaign image, text and link come from the other campaign settings in the Header section (**Campaign image**, **Campaign subheading**, **Campaign heading**, **Campaign description**, **Campaign link label**, **Campaign link**).
+
+The page the visitor is on is marked in the menu automatically. If a top-level link points to the current page, only that link is marked. Otherwise the top-level item that contains the current page is marked. There is no setting for this.
+
+### Search results
+
+Select the **Search results** section on the search page. See [Filters (Search & Discovery)](04-products-variants-metafields.html#10-filters-search--discovery) for the filter drawer.
+
+- **Browse links menu** is a menu picker. The top-level links of the chosen menu, up to 8, are shown as quick links when the visitor has not searched yet and when a search has no results. Leave it empty to hide the links.
+
+### Blog article
+
+Select the **Blog article** section on an article page. Besides the existing date, author and tag settings it has:
+
+- **Show share links** (on by default) shows a **Share this story** row under the article with **Copy link**, **Facebook**, **X** and **Email**. If the browser cannot copy to the clipboard, the link is shown in a text field instead.
+- **Show previous and next story links** (on by default) shows **Previous story** and **Next story** links to the neighbouring articles of the same blog. The help text says the result is exact for blogs of up to 50 stories. A link is left out when there is no story in that direction.
+- **Kit in this story** is a product picker (up to 4 products). The products are shown as product cards under a **Kit in this story** heading. Leave it empty to hide the list.
+
+### 404 page
+
+Select the **404 page** section on the 404 template. In its **Quick links** group, **Browse menu** is a menu picker. The top-level links of the chosen menu, up to 8, appear under the search form with the label "Browse". The default is the `main-menu` menu. Leave it blank to hide the links.

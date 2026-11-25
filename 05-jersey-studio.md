@@ -120,7 +120,7 @@ The switch needs JavaScript. With **Squad order** selected:
 - The number accepts digits up to **Maximum number length**. The name follows **Maximum name length** and **Name lettering**.
 - The print mode of a row follows what is filled in: a name and a number use the **Name + number** variant, a name alone uses the **Name only** variant, and a row with only a size uses the **Plain** variant. A number without a name is not accepted. Rows for a print mode that is switched off in the section settings, or that has no matching variant, show an error.
 - If the product has a Size option, every filled row needs a size. A size that is sold out with the chosen print shows an error on that row. Rows that are completely empty are ignored.
-- Each row is one shirt, quantity 1. The total beside the add button is the sum of the variant prices of the filled rows.
+- Each row is one shirt, quantity 1. A row that has a name or number but no size yet is not counted as a shirt. The counter beside the add button, the button label and the total all use only the rows that are ready, and the total is the sum of their variant prices. Rows still waiting for a size are reported next to the counter, for example "3 shirts · 2 rows need a size".
 
 ### Pasting a list
 
@@ -180,7 +180,8 @@ When a print mode is selected, the theme compares the model swatch color to the 
 
 - **Live preview** shows front and back views. The Back button is disabled for models without a back image, and a note explains that personalization still appears in the order summary.
 - **Allow enlarged preview** adds an enlarge button with a dialog.
-- On a product page, the product media gallery sits below the builder and follows the selected model. Each model block with a product that has media gets its own gallery, and only the selected one is shown. 3D models on the product are supported.
+- On a product page, the product media gallery sits below the builder when **Show product gallery below the builder** is on, and follows the selected model. Each model block with a product that has media gets its own gallery, and only the selected one is shown. 3D models on the product are supported. The setting is on by default in the section. The theme's `product.jersey` template ships with it turned off, because the live preview already shows the shirt. Turn it on in the Jersey customizer section of that template if you want the large photo gallery. The help text reads: "Large photo gallery under the builder. Turn off when the live preview is enough."
+- When **Use as the page heading** is on, a price line appears under the product title on a product page. It reads "From" followed by the lowest variant price when the variants have different prices, and shows the price alone when they all cost the same. It updates when the shopper changes the model.
 - The form always shows a quantity field. On a product page the section also shows accelerated checkout (**Show accelerated checkout**, shown for plain jerseys only) and local pickup (**Show local pickup availability**).
 - A model product description is shown under the price for the selected model.
 
@@ -222,7 +223,7 @@ Kit lines in the cart also show the product type as a kit tag above the title (s
 
 **Content**: Subheading, Heading, Use as the page heading (use only for the main section on a page; product pages use the product title), Description, Name placeholder, Number placeholder.
 
-**Printing and pricing**: Printing pricing, Show price beside each printing option, Show jersey and printing breakdown, Use name only, Use name and number, Use player selection, the five option name and value fields, Price note, Size guide page, Size guide link.
+**Printing and pricing**: Printing pricing, Show price beside each printing option, Show jersey and printing breakdown, Show product gallery below the builder, Use name only, Use name and number, Use player selection, the five option name and value fields, Price note, Size guide page, Size guide link.
 
 **Appearance**: Color palette (Light, Soft, Dark, Accent, Brand colors), Preview background, Preview text, Follow theme media radius (on by default; uses **Media corner radius** from Theme settings > **Shapes**), Corner radius (0 to 24 px, default 2, shown when Follow theme media radius is off), Print style.
 

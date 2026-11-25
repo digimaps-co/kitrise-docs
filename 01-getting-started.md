@@ -36,6 +36,8 @@ Work through these steps in the theme editor.
 6. **Home page.** Open the Home page in the editor. It ships with these sections, in order: Hero, Media collections, Collection tabs, Jersey customizer, Image comparison, Media collections, Kit builder, Campaign showcase, Hotspots, Lifestyle showcase, Video, Blog posts, Icon benefits. Pick collections, images and products in each one. Remove sections you do not need.
 7. **Other settings worth a look.** Layout (**Page width**), Shapes, Product cards, Cart (**Cart type**), and Social media.
 
+To send shoppers with an empty cart to the jersey builder, open Theme settings > **Cart** and set **Jersey builder link**. It adds a **Build your own kit** button next to **Continue shopping** when the cart is empty. Leave it blank to hide the button.
+
 ## Where to find each template
 
 Open the page type in the theme editor preview selector.
