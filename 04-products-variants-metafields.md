@@ -71,7 +71,7 @@ Notes on how order works:
 
 **Advanced:** Show advanced settings (reveals Column gap), Flow speed (shown when a gallery uses Gentle continuous flow), Show denomination card design (gift cards only).
 
-Theme-wide product image look is set in Theme settings > Product media and cards (Product media background, Product media corner radius, Product image fit, Blend product images into their background).
+Theme-wide product image look is set in Theme settings > Product media and cards (Product media background, Product image fit, Blend product images into their background). The gallery corner radius follows **Media corner radius** in Theme settings > **Shapes** while **Use global product media radius** is on. Turn it off to set **Image corner radius** for this section only. The **Featured product** section has the same two settings.
 
 ## 2. Variant images
 
@@ -110,11 +110,13 @@ Product cards show up to **5** color dots. Theme settings > Product media and ca
 
 Dot colors come from the option swatch color when set. Otherwise the theme uses its built-in color name table (for example Forest, Olive, Ocean, Cobalt, Graphite, Clay, Burgundy, Violet, Chalk, Black, White, Grey, Navy, Red, Blue, Green, Beige, Brown, Cream, Yellow, Orange, Pink, Purple, plus common Turkish names). A name that is not in the table gets an empty white ring, so set a swatch color for custom names.
 
-### Kit label on product cards
+### Kit tag on product cards and cart lines
 
-Theme settings > **Product cards** > **Show kit label** (on by default). Help text: "Shows the product type and a print-ready note on products that use the jersey template."
+Theme settings > **Product cards** > **Show kit label** (`card_show_kit_label`, on by default). Help text: "Shows the product type and a print-ready note on products that use the jersey template."
 
-When it is on, a card of a product that uses the `jersey` template shows a line under the product title: the product type followed by "Print-ready", for example "Home kit · Print-ready". The first part is the **Product type** field of the product in Shopify admin, so fill it with the kit kind (Home kit, Away kit, Training kit and so on). If the field is empty, only "Print-ready" is shown. Products that do not use the jersey template show no such line.
+When it is on, the card of a product that uses the `jersey` template shows a small sewn-label tag over the product image with the product type, followed by a second accent tag that reads "Print-ready", for example "Home kit" and "Print-ready". The text comes from the **Product type** field of the product in Shopify admin, so fill it with the kit kind (Home kit, Away kit, Training kit and so on). If the field is empty, no tag is shown at all, including "Print-ready". Products that do not use the jersey template show no tag.
+
+In the cart, a kit line (a product on the `jersey` template, or a line with the hidden jersey properties) shows the product type as the same tag above the product title, without the "Print-ready" tag. This tag in the cart does not depend on **Show kit label**.
 
 ## 4. Sibling products (custom.sibling_products)
 
@@ -267,6 +269,7 @@ On the **Collection page** section:
 - Types handled: list and boolean (checkboxes with counts, values with no matches are disabled) and price range (From and To fields).
 - A filter named Color, Colour, Renk, Couleur, Farbe or Colore (or with a color parameter), or any value with a swatch, shows a color chip next to the label.
 - Active filters show as removable chips and a count on the filter title. The Availability filter and any filter with active values open by default.
+- **Show kit type chips** (`show_type_chips`, on by default, shown when Show filters is on) adds a row of quick filter chips above the product grid, one per product type, plus an **All** chip. It is built from the **Product type** storefront filter, so add Product type under Search & Discovery > Filters first. The row is shown only when the collection has more than one product type.
 - **Show sorting** controls the sort menu. **Products per page** (8 to 48) and **Desktop columns** control the grid.
 
 On the **Search results** section: **Show search filters** (on by default). Same list, boolean and price range types, with an **Apply filters** button.

@@ -103,6 +103,7 @@ Theme settings > **Typography**
 | Additional body text scaling | 100 | Percent scale on body text sizes. |
 | Heading font | Shopify font picker, Barlow Condensed Bold | Font picker for headings. |
 | Heading size | 100 | Percent scale on all heading sizes. |
+| Heading case (`heading_case`) | Uppercase | **Uppercase** or **As typed**. Uppercase sets theme headings in capitals. As typed shows them as you wrote them. |
 
 Notes:
 
@@ -110,11 +111,35 @@ Notes:
 - Heading sizes are fluid (`clamp()`), five steps from extra small to extra large, all multiplied by the Heading size scale.
 - Letter spacing and line height for headings and body are set in `snippets/css-variables.liquid`.
 
+## Corner radius
+
+Theme settings > **Shapes**
+
+Buttons, inputs, cards, media and badges take their corner radius from these settings. Sections follow them, so a change here updates the whole store.
+
+| Setting | Range | Default | Used for |
+| --- | --- | --- | --- |
+| Global corner radius (`corner_radius`) | 0 to 24 px | 8 | The single radius used when **Apply global radius** is on. |
+| Apply global radius (`use_global_corner_radius`) | On or off | Off | When on, the global radius replaces the five radius settings below. |
+| Button corner radius (`button_radius`) | 0 to 24 px | 2 | Buttons. |
+| Button border thickness (`button_border_thickness`) | 0 to 4 px | 1 | Button borders. Not affected by Apply global radius. |
+| Input corner radius (`input_radius`) | 0 to 24 px | 2 | Form fields. |
+| Card corner radius (`card_radius`) | 0 to 24 px | 2 | Cards. |
+| Media corner radius (`media_radius`) | 0 to 24 px | 2 | Images and other media. |
+| Badge corner radius (`badge_radius`) | 0 to 40 px | 2 | Badges. |
+
+A radius of 0 gives square corners.
+
+Some sections have their own radius setting that takes precedence over the theme setting when you turn the theme link off:
+
+- **Jersey customizer** and **Image comparison**: **Follow theme media radius** (`use_global_radius`, on by default) uses **Media corner radius**. Turn it off to show **Corner radius** (Jersey customizer, 0 to 24 px, default 2) or, under Show advanced settings, **Corner rounding** (Image comparison, 0 to 40 px, default 2).
+- **Product information** and **Featured product**: **Use global product media radius** (`use_global_media_radius`, on by default) uses **Media corner radius** for the gallery. Turn it off to show **Image corner radius** (`media_radius`, 0 to 32 px, default 16).
+
 ## Jersey print fonts
 
-The **Jersey customizer** section has two font pickers for the customizer preview:
+Theme settings > **Jersey kit** has two font pickers for the printed name and number on the jersey preview and on the printed preview in the cart:
 
 - **Athletic print font** (default Anton regular)
 - **Classic print font** (default Libre Baskerville regular)
 
-The **Print style** select (Athletic or Classic, default Athletic) picks which one is used. Each is loaded with `font_face` and swap display, and applied to the print text on the jersey preview through section-scoped CSS variables. The same section has color settings **Preview background** (default #eeeee8) and **Preview text** (default #171918) for the preview canvas, plus its own **Color palette** select.
+The **Print style** select in the **Jersey customizer** section (Athletic, Clean or Classic, default Athletic) picks which one is used. Each is loaded with `font_face` and swap display for the whole theme. The Jersey customizer section also has color settings **Preview background** (default #eeeee8) and **Preview text** (default #171918) for the preview canvas, plus its own **Color palette** select.
