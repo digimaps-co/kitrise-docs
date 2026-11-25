@@ -134,7 +134,7 @@ If the product has no Size option, a size in the pasted line is ignored.
 
 ### Adding to the cart
 
-**Add your squad to bag** (the label shows the shirt count) sends every filled row in one request. If any row has an error, nothing is added and the rows that need attention are marked. After a successful add the roster is cleared.
+The squad button reads **Add your squad to bag** while the roster is empty, and "Add 12 shirts to bag" (or "Add 1 shirt to bag") once rows are filled. It sends every filled row in one request. If any row has an error, nothing is added and the rows that need attention are marked. After a successful add the roster is cleared.
 
 In the cart, the lines of one squad are listed together under a **Squad order** heading with the number of shirts, for example "12 shirts". The theme groups lines that share the same `_Jersey squad` value.
 
@@ -205,7 +205,7 @@ To make it work:
 Notes:
 
 - The product must use the `jersey` template. Other products keep their normal hover image.
-- If a color variant has its own front image, the card compares the back with that image, so a back that matches it is not used.
+- On cards the back is compared only with the product's featured (first) image. The comparison with a color variant's own front image applies only to the cart line image.
 - In the Jersey customizer, a model with an empty **Back image** uses the same rule.
 
 ## Printed preview in the cart
