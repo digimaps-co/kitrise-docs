@@ -62,10 +62,9 @@ Add one **Jersey model** block per product (up to 15). Each block has:
 | Front image | Preview image. Falls back to the product featured image. |
 | Back image | The real back view. Printing is shown only on this image. When it is empty, the theme takes the back from the product's own media, following **Back image of the shirt** in Theme settings > **Jersey kit** (see "Jersey stage on product cards" below). |
 | Model swatch | Color dot on the card. Also used for the contrast warning. |
-| Suggested print color | Pre-selected when it matches one of the Print color blocks, until the shopper picks a color. |
-| Name: distance from top, Number: distance from top, Name size, Number size | Print placement in percent of the image. |
+| Suggested print color | Selected first for this model when a Print color block has exactly this color. Otherwise the first Print color block is selected. The shopper's own choice replaces it. |
 
-With **Show advanced settings** on the block, **Print: distance from left** and **Print area width** appear.
+Turn on **Show advanced settings** on the block to show all position and size fields together: **Name: distance from top**, **Number: distance from top**, **Name size**, **Number size**, **Print: distance from left** and **Print area width**. They are percentages of the image. Set them after you add your own front and back images.
 
 A block without a product is not shown in the builder. If no block has a product, the section shows an empty state; in the editor it says "Add a product to a Jersey model block to enable the builder."
 
@@ -102,7 +101,7 @@ Limits and formatting (under **Show advanced settings** on the section):
 
 Name and number placeholders are set in the Content group with **Name placeholder** (default "YOUR NAME") and **Number placeholder** (default "07").
 
-The theme editor remembers the shopper-side preview state while you edit and selects the matching model or player when you click its block.
+The theme editor remembers the shopper-side preview state while you edit. When you select a Jersey model, Player or Print color block, the preview shows that block. When you clear the selection, the preview returns to the previous state.
 
 ## Squad order
 
@@ -219,13 +218,13 @@ Kit lines in the cart also show the product type as a kit tag above the title (s
 
 ## Section settings reference
 
-**Layout**: Layout (Preview on the left, Preview on the right, Stacked), Section width (960 to 1800 px, default 1440), Show product gallery below the builder.
+**Layout**: Layout (Preview on the left, Preview on the right, Stacked), Show product gallery below the builder. The section follows the **Page width** in Theme settings > **Layout**.
 
 **Content**: Subheading, Heading, Use as the page heading (use only for the main section on a page; product pages use the product title), Description, Name placeholder, Number placeholder.
 
 **Printing and pricing**: Printing pricing, Show price beside each printing option, Show jersey and printing breakdown, Use name only, Use name and number, Use player selection, the five option name and value fields, Price note, Size guide page, Size guide link.
 
-**Appearance**: Color palette (Light, Soft, Dark, Accent, Brand colors), Preview background, Preview text, Follow theme media radius (on by default; uses **Media corner radius** from Theme settings > **Shapes**), Corner radius (0 to 24 px, default 2, shown when Follow theme media radius is off), Print style.
+**Appearance**: Color palette (Light, Soft, Dark, Accent, Brand colors), Preview background, Preview text color, Follow theme media radius (on by default; uses **Media corner radius** from Theme settings > **Shapes**), Corner radius (0 to 24 px, default 2, shown when Follow theme media radius is off), Print style.
 
 **Print typography and placement**: Name and Number size and vertical adjustments, Allow enlarged preview, Top spacing, Bottom spacing.
 

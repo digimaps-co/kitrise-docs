@@ -63,7 +63,7 @@ Notes on how order works:
 
 ### Section settings
 
-**Layout:** Gallery position (Left, Right, Above product information), Product details placement, Desktop gallery (Classic thumbnails, One image carousel, Two-column grid, First image full width, then pairs, Gentle continuous flow), Mobile gallery (One image carousel, Two image carousel, One image per row, Gentle continuous flow), Use global product image fit, Image fit, Use global product media radius, Image corner radius, Image ratio (Square, Portrait, Landscape), Keep details visible while scrolling, Move images automatically, Flow speed (shown only when Move images automatically is on), Show denomination card design (gift cards only).
+**Layout:** Gallery position (Left, Right, Above product information), Product details placement, Desktop gallery (Classic thumbnails, One image carousel, Two-column grid, First image full width, then pairs, Gentle continuous flow), Mobile gallery (One image carousel, Two image carousel, One image per row, Gentle continuous flow), Move images automatically, Flow speed (shown only when Move images automatically is on), Show denomination card design (gift cards only), Use global product image fit, Image fit, Use global product media radius, Image corner radius, Image ratio (Square, Portrait, Landscape), Keep details visible while scrolling.
 
 **Content:** Show breadcrumb navigation, Show compact sticky cart bar.
 
@@ -203,11 +203,13 @@ Settings:
 - **Photo shape:** Square, Portrait, Landscape.
 - **Option spacing:** Compact, Comfortable.
 
+Only the first Complete the kit block that matches the product is shown. A block that does not match is not shown on the storefront. In the theme editor it shows the note "Not shown on this product" while it is selected. A Text note block limited to selected collections is also hidden on the storefront and shows a note in its place in the theme editor.
+
 Rules the theme always applies: sold-out products and products excluded in Theme settings > Product recommendations are skipped, duplicates are removed, and the list is capped at 12. On mobile, customers swipe one card at a time. Option values on these cards are shown as buttons, and colors as a swatch with the color name. The cards do not use dropdowns.
 
 ### Related products section
 
-The **Related products** section sits below Product information. It loads Shopify's related recommendations. Settings: **Heading**, **Maximum products** (2 to 10, default 6), **Columns on large screens** (2 to 4). If Shopify returns nothing, the section hides itself and the theme does not fill it from other collections.
+The **Related products** section sits below Product information. It loads Shopify's related recommendations. Settings: **Heading**, **Maximum products** (2 to 10, default 6), **Desktop columns** (2 to 4). If Shopify returns nothing, the section hides itself and the theme does not fill it from other collections.
 
 ### Excluding products from recommendations
 
@@ -246,7 +248,7 @@ Email and date errors show inline. When the recipient form is on, accelerated ch
 
 ### Denomination card preview
 
-In Product information, under **Advanced**, turn on **Show denomination card design**. The gallery is replaced with a card showing your store name, the words "Digital gift card" and the amount of the selected variant. When the product also has media, the card is shown smaller above the gallery. The preset template has this on. Turn it off to use product media only.
+In Product information, under **Layout** (in Featured product, under **Advanced**), turn on **Show denomination card design**. The card shows your store name, the words "Digital gift card" and the amount of the selected variant. It is added above the product gallery. When the product has no media, the card replaces the gallery. The preset template has this on. Turn it off to use product media only.
 
 ### Gift card page
 
