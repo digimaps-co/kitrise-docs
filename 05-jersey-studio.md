@@ -66,7 +66,7 @@ Add one **Jersey model** block per product (up to 15). Each block has:
 
 Turn on **Show advanced settings** on the block to show all position and size fields together: **Name: distance from top**, **Number: distance from top**, **Name size**, **Number size**, **Print: distance from left** and **Print area width**. They are percentages of the image. Set them after you add your own front and back images.
 
-A block without a product is not shown in the builder. If no block has a product, the section shows an empty state; in the editor it says "Add a product to a Jersey model block to enable the builder."
+A block without a product is not shown in the builder. If no block has a product, the section shows an empty state; in the editor it says "Add a product to a Jersey model block to enable the builder." The product template is the exception: when no block has a product, the builder uses the product of the page as its only model, so the product can still be bought. The category and model steps are hidden, and the personalization step and squad order are hidden when the product has no Personalization option. The editor shows the note "Showing this product. Select a product in each Jersey model block to offer more models."
 
 The shopper chooses a category first (Men, Women, Kids), then a model in that category. Adult blocks show for Men and Women.
 
