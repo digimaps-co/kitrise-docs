@@ -247,7 +247,7 @@ The main product template section: gallery, product info and buy box.
 
 Add Collapsible information blocks for rows of details such as shipping and returns or materials and care.
 
-A Complete the kit or Text note block that does not match the current product is not shown on the storefront. In the theme editor it shows the note "Not shown on this product" only while it is selected.
+A Complete the kit or Text note block that does not match the current product is not shown on the storefront. In the theme editor a Complete the kit block shows the note "Not shown on this product" while it is selected, and a Text note block shows a note in its place.
 
 ## Product kit
 

@@ -203,7 +203,7 @@ Settings:
 - **Photo shape:** Square, Portrait, Landscape.
 - **Option spacing:** Compact, Comfortable.
 
-Only the first Complete the kit block that matches the product is shown. A block that does not match is not shown on the storefront. In the theme editor it shows the note "Not shown on this product" while it is selected. A Text note block limited to selected collections behaves the same way.
+Only the first Complete the kit block that matches the product is shown. A block that does not match is not shown on the storefront. In the theme editor it shows the note "Not shown on this product" while it is selected. A Text note block limited to selected collections is also hidden on the storefront and shows a note in its place in the theme editor.
 
 Rules the theme always applies: sold-out products and products excluded in Theme settings > Product recommendations are skipped, duplicates are removed, and the list is capped at 12. On mobile, customers swipe one card at a time. Option values on these cards are shown as buttons, and colors as a swatch with the color name. The cards do not use dropdowns.
 
