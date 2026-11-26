@@ -116,7 +116,7 @@ The theme has no setting for comments of its own. Comments are controlled in Sho
 
 Customers can leave a note for your team with their order.
 
-- **Theme settings > Cart > Show cart note** turns the note on or off in the cart drawer.
+- **Theme settings > Cart > Show cart note in the drawer** turns the note on or off in the cart drawer.
 - In the **Cart** section on the cart page: **Show order note** turns the note on or off on the cart page, and **Open order note by default** opens the panel there.
 - The note field is a collapsed "Add an order note" panel with a 5,000 character limit. The note is saved with the cart as the customer types and is stored on the order.
 

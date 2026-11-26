@@ -17,8 +17,6 @@ Theme settings > **Colors**
 | Secondary background | #f3f3f3 | Used for alternate surfaces. |
 | Secondary background text | #000000 | Text on the secondary background. |
 | Accent | #121212 | Accent surfaces and solid elements. |
-| Highlight | #1f7c75 | Used for sale badges. Keep contrast with white at 4.5:1 or better. |
-| Highlight text | #ffffff | Text on highlight backgrounds, such as sale badges. |
 | Accent text | #ffffff | Text and icons on the accent color and on solid buttons. |
 
 These values are written as CSS variables by `snippets/css-variables.liquid` and used across the theme.
@@ -27,10 +25,14 @@ These values are written as CSS variables by `snippets/css-variables.liquid` and
 
 Theme settings > **Product cards**
 
-- **Sale badge background**: leave empty to use Highlight.
+- **Sale badge background**: leave empty to use the Accent color.
 - **Sale badge text**: leave empty and the theme picks white or black, whichever has the higher contrast against the badge background.
-- **Sale badge border**: leave empty to use Highlight.
+- **Sale badge border**: used as chosen. Leave empty to use a soft tint of the Accent color.
 - **Sale badge indicator**: **Icon** or **Text**. New installs use **Text**. A store that already saved a choice keeps it.
+
+The three sale badge colors apply to the sale badges on product cards and on the product page.
+
+**Show second image on hover** (also under Product cards, on by default) swaps a card to the next product image when a shopper hovers over it.
 
 ### Product media colors
 
@@ -42,17 +44,28 @@ Theme settings > **Product media**
 
 ## Section palettes
 
-Most sections have a **Color palette** select (setting id `palette`). A few sections label it **Palette**. In most sections it adds a `fx-palette--<value>` class, and the section then uses that palette's background, text, muted text and line colors. A few sections, such as Hero and Countdown, apply the value through their own section class instead.
+Theme settings > **Colors** has a **Section palettes** header with six colors. The Light, Soft and Dark palettes of every section that offers them follow these colors.
+
+| Setting | Default |
+| --- | --- |
+| Light background | #ffffff |
+| Light text | #171918 |
+| Soft background | #eeefea |
+| Soft text | #171918 |
+| Dark background | #171918 |
+| Dark text | #f8f8f5 |
+
+Most sections have a **Color palette** select (setting id `palette`). In most sections it adds a `fx-palette--<value>` class, and the section then uses that palette's background, text, muted text and line colors. A few sections, such as Hero and Countdown, apply the value through their own section class instead.
 
 Values:
 
-- **Light**: white background, near-black text.
-- **Soft**: pale gray-green background, near-black text.
-- **Dark**: near-black background, light text.
+- **Light**: the Light background and Light text colors.
+- **Soft**: the Soft background and Soft text colors.
+- **Dark**: the Dark background and Dark text colors.
 - **Accent**: uses the Accent color as background and Accent text as text color.
-- **Brand colors**: uses the Background and Text colors from Theme settings > Colors. In most sections the setting info says: "Choose Brand colors to use the background and text colors from Theme settings > Colors."
+- **Brand colors**: uses the Background and Text colors from Theme settings > Colors. In most sections the setting info says: "Light, Soft and Dark use the section palette colors in Theme settings > Colors, and Brand uses its main background and text colors."
 
-Not every section offers every value. For example, Hotspots offers only Brand, Light and Soft, and most other sections add Dark and Accent. Some sections name the options Brand, Light or Soft. The editor shows only the options a section supports.
+Not every section offers every value. For example, Hotspots offers only Brand, Light and Soft, and most other sections add Dark and Accent. The editor shows only the options a section supports.
 
 Each section lists its own palette options in its settings.
 
@@ -68,7 +81,7 @@ How it works, from `assets/critical.css`:
 - The result replaces `--fx-brand-muted` and `--fx-color-muted`.
 - It is wrapped in `@supports` for relative color syntax and `sign()`. Browsers without that support keep the base muted value, which is the text color at 62% opacity.
 
-The fixed palettes (Light, Soft, Dark) use fixed muted colors. The Accent palette uses the Accent text color for muted text.
+The Light, Soft and Dark palettes mix their muted text and line colors from the palette's own text and background colors. The Accent palette uses the Accent text color for muted text.
 
 ## Light and dark mode
 
@@ -76,7 +89,7 @@ Theme settings > **Color mode**
 
 | Setting | Default | Notes |
 | --- | --- | --- |
-| Enable light and dark mode | On | Turns the feature on. When off, no toggle, script or dark stylesheet is loaded. |
+| Enable light and dark mode | On | Turns the feature on. When off, no toggle, script or dark stylesheet is loaded, and the settings below are hidden. |
 | Default appearance | Light | Options: Light, Dark, Use device setting. |
 | Dark background | #141817 | |
 | Dark surface | #202622 | |
@@ -143,4 +156,4 @@ Theme settings > **Jersey kit** has two font pickers for the printed name and nu
 - **Athletic print font** (default Anton regular)
 - **Classic print font** (default Libre Baskerville regular)
 
-The **Print style** select in the **Jersey customizer** section (Athletic, Clean or Classic, default Athletic) picks which one is used. Each is loaded with `font_face` and swap display for the whole theme. The Jersey customizer section also has color settings **Preview background** (default #eeeee8) and **Preview text** (default #171918) for the preview canvas, plus its own **Color palette** select.
+The **Print style** select in the **Jersey customizer** section (Athletic, Clean or Classic, default Athletic) picks which one is used. Each is loaded with `font_face` and swap display for the whole theme. The Jersey customizer section also has color settings **Preview background** (default #eeeee8) and **Preview text color** (default #171918) for the preview canvas, plus its own **Color palette** select.

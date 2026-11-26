@@ -30,11 +30,11 @@ Work through these steps in the theme editor.
 
 1. **Logo.** Open the Header section. Set **Logo on light backgrounds** (use a dark logo). Optionally set **Logo on dark / transparent backgrounds** and **Text logo fallback**. Adjust **Logo width** and **Mobile logo width**. The footer has its own logo settings (**Logo (default)**, **Logo (dark background)**) and a **Brand display** choice.
 2. **Favicon.** Theme settings > **Brand** > **Favicon**.
-3. **Colors.** Theme settings > **Colors**: Text, Background, Secondary background, Secondary background text, Accent, Highlight, Highlight text, Accent text. For a dark appearance, use **Color mode**: **Enable light and dark mode**, **Default appearance**, and the dark color settings.
+3. **Colors.** Theme settings > **Colors**: Text, Background, Secondary background, Secondary background text, Accent, Accent text, and the six **Section palettes** colors. For a dark appearance, use **Color mode**: **Enable light and dark mode**, **Default appearance**, and the dark color settings.
 4. **Typography.** Theme settings > **Typography**: **Body font**, **Body size**, **Additional body text scaling**, **Heading font**, **Heading size**. The defaults are Barlow Condensed Bold for headings and Barlow Regular for body text.
 5. **Menus.** Create `main-menu` and `footer` in **Content > Menus**. In the Header, check **Main menu** and **Search shortcuts**. On desktop, when the menu does not fit in the header row, the last items move under a **More** item. The menu order is the priority order, so put the most important links first. The link set in **Featured navigation label** and **Featured navigation link** always stays visible. If fewer than two items fit, the menu button (drawer) is used instead. In the Footer, add or edit **Footer menu** blocks and set **Footer menu** and **Heading**.
 6. **Home page.** Open the Home page in the editor. It ships with these sections, in order: Hero, Media collections, Collection tabs, Jersey customizer, Image comparison, Media collections, Kit builder, Campaign showcase, Hotspots, Lifestyle showcase, Video, Blog posts, Icon benefits. Pick collections, images and products in each one. Remove sections you do not need.
-7. **Other settings worth a look.** Layout (**Page width**), Shapes, Product cards, Cart (**Cart type**), and Social media.
+7. **Other settings worth a look.** Layout (**Page width**, which sets the content width of every section), Shapes, Product cards, Cart (**Cart type**), and Social media.
 
 To send shoppers with an empty cart to the jersey builder, open Theme settings > **Cart** and set **Jersey builder link**. It adds a **Build your own kit** button next to **Continue shopping** when the cart is empty. Leave it blank to hide the button.
 
