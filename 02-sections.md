@@ -125,7 +125,7 @@ Frequently asked questions as an accordion.
 One product shown with its gallery and buy box, placed on any page.
 
 - Templates: Any template. Not available in header or footer section groups.
-- Blocks: App blocks, Product heading, Price, Product options and purchase, Product features, Complete the kit, Description, Text note, Collapsible information, Custom Liquid
+- Blocks: App blocks, Product heading, Price, Product options and purchase (classic), Product features, Complete the kit, Description, Text note, Collapsible information, Custom Liquid
 - Key settings: Product, Gallery position, Desktop gallery, Keep details visible while scrolling
 
 ## Featured products
@@ -235,7 +235,7 @@ A comparison table of selected products with feature rows.
 The main product template section: gallery, product info and buy box.
 
 - Templates: Only on the product template.
-- Blocks: App blocks, Product heading, Price, Vendor, SKU, Variant picker, Quantity selector, Buy buttons, Product options and purchase, Product features, Complete the kit, Description, Text note, Collapsible information, Custom Liquid
+- Blocks: App blocks, Product heading, Price, Vendor, SKU, Variant picker, Quantity selector, Buy buttons, Product options and purchase (classic), Product features, Complete the kit, Description, Text note, Collapsible information, Custom Liquid
 - Key settings: Gallery position, Desktop gallery, Show breadcrumb navigation, Show compact sticky cart bar
 
 Add Collapsible information blocks for rows of details such as shipping and returns or materials and care.
@@ -280,7 +280,7 @@ These four sections belong to fixed places in the theme and are not part of the 
 
 Open the **Header group** and select the **Header** section.
 
-**Two-level dropdown style** is hidden when the layout is the centered logo with drawer navigation. It chooses how a desktop menu item with one level of sub-links opens. The options are **Text list** and **Image tiles**. The default in the theme's own header group is **Image tiles**. A header that does not have the setting saved uses **Text list**. The help text reads: "Menu items with one level of sub-links. Tiles show the collection or product image next to each title. Items with three levels keep the mega menu."
+**Two-level dropdown style** is hidden when the layout is the centered logo with drawer navigation. It chooses how a desktop menu item with one level of sub-links opens. The options are **Text list** and **Image tiles**. The default in the theme's own header group is **Image tiles**. A header that does not have the setting saved uses **Text list**. The help text reads: "Menu items with one level of sub-links. Tiles show the collection or product image next to each title. Up to 6 collection or product links show an image. Items with three levels keep the mega menu."
 
 With **Image tiles**:
 
@@ -295,16 +295,16 @@ The page the visitor is on is marked in the menu automatically. If a top-level l
 
 Select the **Search results** section on the search page. See [Filters (Search & Discovery)](04-products-variants-metafields.html#10-filters-search--discovery) for the filter drawer.
 
-- **Browse links menu** is a menu picker. The top-level links of the chosen menu, up to 8, are shown as quick links when the visitor has not searched yet and when a search has no results. Leave it empty to hide the links.
+- **Quick links menu** (under the **Quick links** header) is a menu picker. The top-level links of the chosen menu, up to 8, are shown as quick links when the visitor has not searched yet and when a search has no results. Leave it empty to hide the links.
 
 ### Blog article
 
 Select the **Blog article** section on an article page. Besides the existing date, author and tag settings it has:
 
 - **Show share links** (on by default) shows a **Share this story** row under the article with **Copy link**, **Facebook**, **X** and **Email**. If the browser cannot copy to the clipboard, the link is shown in a text field instead.
-- **Show previous and next story links** (on by default) shows **Previous story** and **Next story** links to the neighbouring articles of the same blog. The help text says the result is exact for blogs of up to 50 stories. A link is left out when there is no story in that direction.
-- **Kit in this story** is a product picker (up to 4 products). The products are shown as product cards under a **Kit in this story** heading. Leave it empty to hide the list.
+- **Show previous and next post links** (on by default) shows **Previous story** and **Next story** links to the neighbouring articles of the same blog. The help text reads: "Links to the newer and older posts in the same blog. Works best for blogs with up to 50 posts." A link is left out when there is no story in that direction.
+- **Products in this post** is a product picker (up to 4 products). The products are shown as product cards under a **Kit in this story** heading. Leave it empty to hide the list.
 
 ### 404 page
 
-Select the **404 page** section on the 404 template. In its **Quick links** group, **Browse menu** is a menu picker. The top-level links of the chosen menu, up to 8, appear under the search form with the label "Browse". The default is the `main-menu` menu. Leave it blank to hide the links.
+Select the **404 page** section on the 404 template. In its **Quick links** group, **Quick links menu** is a menu picker. The top-level links of the chosen menu, up to 8, appear under the search form with the label "Browse". The default is the `main-menu` menu. Leave it blank to hide the links.

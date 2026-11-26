@@ -219,15 +219,17 @@ Kit lines in the cart also show the product type as a kit tag above the title (s
 
 ## Section settings reference
 
-**Layout**: Layout (Preview on the left, Preview on the right, Stacked), Section width (960 to 1800 px, default 1440).
+**Layout**: Layout (Preview on the left, Preview on the right, Stacked), Section width (960 to 1800 px, default 1440), Show product gallery below the builder.
 
 **Content**: Subheading, Heading, Use as the page heading (use only for the main section on a page; product pages use the product title), Description, Name placeholder, Number placeholder.
 
-**Printing and pricing**: Printing pricing, Show price beside each printing option, Show jersey and printing breakdown, Show product gallery below the builder, Use name only, Use name and number, Use player selection, the five option name and value fields, Price note, Size guide page, Size guide link.
+**Printing and pricing**: Printing pricing, Show price beside each printing option, Show jersey and printing breakdown, Use name only, Use name and number, Use player selection, the five option name and value fields, Price note, Size guide page, Size guide link.
 
 **Appearance**: Color palette (Light, Soft, Dark, Accent, Brand colors), Preview background, Preview text, Follow theme media radius (on by default; uses **Media corner radius** from Theme settings > **Shapes**), Corner radius (0 to 24 px, default 2, shown when Follow theme media radius is off), Print style.
 
-**Print typography and placement**: Name and Number size and vertical adjustments, Allow enlarged preview, Show accelerated checkout, Show local pickup availability, Top spacing, Bottom spacing.
+**Print typography and placement**: Name and Number size and vertical adjustments, Allow enlarged preview, Top spacing, Bottom spacing.
+
+**Buying options**: Show accelerated checkout, Show local pickup availability.
 
 **Mobile**: Preview height on mobile (200 to 520 px), Top spacing on mobile, Bottom spacing on mobile.
 
