@@ -63,13 +63,13 @@ Notes on how order works:
 
 ### Section settings
 
-**Layout:** Gallery position (Left, Right, Above product information), Product details placement, Desktop gallery (Classic thumbnails, One image carousel, Two-column grid, First image full width, then pairs, Gentle continuous flow), Mobile gallery (One image carousel, Two image carousel, One image per row, Gentle continuous flow), Use global product image fit, Image fit, Use global product media radius, Image corner radius, Image ratio (Square, Portrait, Landscape), Keep details visible while scrolling, Move images automatically.
+**Layout:** Gallery position (Left, Right, Above product information), Product details placement, Desktop gallery (Classic thumbnails, One image carousel, Two-column grid, First image full width, then pairs, Gentle continuous flow), Mobile gallery (One image carousel, Two image carousel, One image per row, Gentle continuous flow), Use global product image fit, Image fit, Use global product media radius, Image corner radius, Image ratio (Square, Portrait, Landscape), Keep details visible while scrolling, Move images automatically, Flow speed (shown only when Move images automatically is on), Show denomination card design (gift cards only).
 
 **Content:** Show breadcrumb navigation, Show compact sticky cart bar.
 
 **Appearance:** Color palette, Top spacing, Bottom spacing.
 
-**Advanced:** Show advanced settings (reveals Column gap), Flow speed (shown only when Move images automatically is on), Show denomination card design (gift cards only).
+**Advanced:** Show advanced settings (reveals Column gap).
 
 **Move images automatically** is off by default. Turn it on and the Gentle continuous flow gallery moves by itself, at the speed set in **Flow speed**, which only shows when this is on. It has no effect on the other gallery layouts. It does not start for visitors who ask their device to reduce motion, or when the product media includes anything other than images.
 
