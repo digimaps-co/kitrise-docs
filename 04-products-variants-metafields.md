@@ -26,8 +26,8 @@ The product page template is `templates/product.json`. It holds two sections:
 | Price | 1 | Price, compare-at price, sale badge, unit price, and the taxes and shipping policy notes. |
 | Variant picker | 1 | One option group per product option. |
 | Quantity selector | 1 | Quantity input. |
-| Buy buttons | 1 | Add to cart, accelerated checkout, purchase options (selling plans), gift card recipient form, pickup availability, payment terms, size guide. Settings: **Show accelerated checkout**, **Size guide page**, **Show gift card recipient form**, **Show local pickup availability**. |
-| Product options and purchase | 1 | Older all-in-one block that combines variant picker, quantity and buy buttons. Use Variant picker, Quantity selector and Buy buttons for new setups. |
+| Buy buttons | 1 | Add to bag, accelerated checkout, purchase options (selling plans), gift card recipient form, pickup availability, payment terms, size guide. Settings: **Show accelerated checkout**, **Size guide page**, **Show gift card recipient form**, **Show local pickup availability**. |
+| Product options and purchase (classic) | 1 | Older all-in-one block that combines variant picker, quantity and buy buttons. Use Variant picker, Quantity selector and Buy buttons for new setups. |
 | Product features | 1 | Up to three icon, heading and short text items. |
 | Complete the kit | 10 | Recommendation group. See section 8. |
 | Description | 1 | Product description. Settings: **Show description as an accordion**, **Heading**, **Open by default**. |
@@ -63,17 +63,17 @@ Notes on how order works:
 
 ### Section settings
 
-**Layout:** Gallery position (Left, Right, Above product information), Product details placement, Desktop gallery (Classic thumbnails, One image carousel, Two-column grid, First image full width, then pairs, Gentle continuous flow), Mobile gallery (One image carousel, Two image carousel, One image per row, Gentle continuous flow), Use global product image fit, Image fit, Use global product media radius, Image corner radius, Image ratio (Square, Portrait, Landscape), Keep details visible while scrolling.
+**Layout:** Gallery position (Left, Right, Above product information), Product details placement, Desktop gallery (Classic thumbnails, One image carousel, Two-column grid, First image full width, then pairs, Gentle continuous flow), Mobile gallery (One image carousel, Two image carousel, One image per row, Gentle continuous flow), Use global product image fit, Image fit, Use global product media radius, Image corner radius, Image ratio (Square, Portrait, Landscape), Keep details visible while scrolling, Move images automatically.
 
 **Content:** Show breadcrumb navigation, Show compact sticky cart bar.
 
 **Appearance:** Color palette, Top spacing, Bottom spacing.
 
-**Advanced:** Show advanced settings (reveals Column gap), Flow speed and Move images automatically (both shown when a gallery uses Gentle continuous flow), Show denomination card design (gift cards only).
+**Advanced:** Show advanced settings (reveals Column gap), Flow speed (shown only when Move images automatically is on), Show denomination card design (gift cards only).
 
-**Move images automatically** is off by default. Turn it on and the Gentle continuous flow gallery moves by itself, at the speed set in **Flow speed**. It has no effect on the other gallery layouts. It does not start for visitors who ask their device to reduce motion, or when the product media includes anything other than images.
+**Move images automatically** is off by default. Turn it on and the Gentle continuous flow gallery moves by itself, at the speed set in **Flow speed**, which only shows when this is on. It has no effect on the other gallery layouts. It does not start for visitors who ask their device to reduce motion, or when the product media includes anything other than images.
 
-Theme-wide product image look is set in Theme settings > Product media and cards (Product media background, Product image fit, Blend product images into their background). The gallery corner radius follows **Media corner radius** in Theme settings > **Shapes** while **Use global product media radius** is on. Turn it off to set **Image corner radius** for this section only. The **Featured product** section has the same two settings.
+Theme-wide product image look is set in Theme settings > Product media (Product media background, Product image fit, Blend product images into their background). The gallery corner radius follows **Media corner radius** in Theme settings > **Shapes** while **Use global product media radius** is on. Turn it off to set **Image corner radius** for this section only. The **Featured product** section has the same two settings and **Move images automatically**.
 
 ## 2. Variant images
 
@@ -105,7 +105,7 @@ To control swatch colors yourself, set swatches on the option values in Shopify 
 
 ### Card swatches (collection, search and recommendation cards)
 
-Product cards show up to **5** color dots. Theme settings > Product media and cards controls them:
+Product cards show up to **5** color dots. Theme settings > Product cards controls them:
 
 - **Card color options:** Color swatches, Image thumbnails, None.
 - **Color option action:** Preview on card (picking a dot swaps image, title, price and links on the card), or Open product.

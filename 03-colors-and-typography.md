@@ -34,7 +34,7 @@ Theme settings > **Product cards**
 
 ### Product media colors
 
-Theme settings > **Product media and cards**
+Theme settings > **Product media**
 
 - **Product media background**: a select with Gray (default), White, Ivory and Custom color.
 - **Custom product media color** (default #f4f4f4): used when the background is set to the custom option.
@@ -42,7 +42,7 @@ Theme settings > **Product media and cards**
 
 ## Section palettes
 
-Most sections have a **Color palette** select (setting id `palette`). A few sections label it **Color scheme** or **Palette**. In most sections it adds a `fx-palette--<value>` class, and the section then uses that palette's background, text, muted text and line colors. A few sections, such as Hero and Countdown, apply the value through their own section class instead.
+Most sections have a **Color palette** select (setting id `palette`). A few sections label it **Palette**. In most sections it adds a `fx-palette--<value>` class, and the section then uses that palette's background, text, muted text and line colors. A few sections, such as Hero and Countdown, apply the value through their own section class instead.
 
 Values:
 
@@ -52,7 +52,7 @@ Values:
 - **Accent**: uses the Accent color as background and Accent text as text color.
 - **Brand colors**: uses the Background and Text colors from Theme settings > Colors. In most sections the setting info says: "Choose Brand colors to use the background and text colors from Theme settings > Colors."
 
-Not every section offers every value. For example, Hotspots offers only Brand, Light and Soft, and most other sections add Dark and Accent. Some sections name the options Brand, White or Soft neutral. The editor shows only the options a section supports.
+Not every section offers every value. For example, Hotspots offers only Brand, Light and Soft, and most other sections add Dark and Accent. Some sections name the options Brand, Light or Soft. The editor shows only the options a section supports.
 
 Each section lists its own palette options in its settings.
 
@@ -121,7 +121,7 @@ Buttons, inputs, cards, media and badges take their corner radius from these set
 | Setting | Range | Default | Used for |
 | --- | --- | --- | --- |
 | Global corner radius (`corner_radius`) | 0 to 24 px | 8 | The single radius used when **Apply global radius** is on. |
-| Apply global radius (`use_global_corner_radius`) | On or off | Off | When on, the global radius replaces the five radius settings below. |
+| Apply global radius (`use_global_corner_radius`) | On or off | Off | When on, one global radius slider is shown and it replaces the five radius settings below. When off, the five component sliders below are shown instead. |
 | Button corner radius (`button_radius`) | 0 to 24 px | 2 | Buttons. |
 | Button border thickness (`button_border_thickness`) | 0 to 4 px | 1 | Button borders. Not affected by Apply global radius. |
 | Input corner radius (`input_radius`) | 0 to 24 px | 2 | Form fields. |

@@ -45,7 +45,7 @@ The theme includes two page templates for this, `page.teamwear` and `page.orders
 
 ### Support fields (for theme support only)
 
-The section has a group called "Theme support fields": Ask for the store URL, Show a screenshot link field, and Theme name for support requests. Leave these empty and off on your customer-facing contact page. They are meant for a theme support form.
+The section has a group called "Extra form fields": Ask for a website link, Ask for a screenshot link, and Hidden tag for the message. Leave these empty and off on your customer-facing contact page. They are meant for a theme support form.
 
 ### Where messages go
 
