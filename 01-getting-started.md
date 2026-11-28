@@ -33,10 +33,14 @@ Work through these steps in the theme editor.
 3. **Colors.** Theme settings > **Colors**: Text, Background, Secondary background, Secondary background text, Accent, Accent text, and the six **Section palettes** colors. For a dark appearance, use **Color mode**: **Enable light and dark mode**, **Default appearance**, and the dark color settings.
 4. **Typography.** Theme settings > **Typography**: **Body font**, **Body size**, **Additional body text scaling**, **Heading font**, **Heading size**. The defaults are Barlow Condensed Bold for headings and Barlow Regular for body text.
 5. **Menus.** Create `main-menu` and `footer` in **Content > Menus**. In the Header, check **Main menu** and **Search shortcuts**. On desktop, when the menu does not fit in the header row, the last items move under a **More** item. The menu order is the priority order, so put the most important links first. The link set in **Featured navigation label** and **Featured navigation link** always stays visible. If fewer than two items fit, the menu button (drawer) is used instead. In the Footer, add or edit **Footer menu** blocks and set **Footer menu** and **Heading**.
-6. **Home page.** Open the Home page in the editor. It ships with these sections, in order: Hero, Media collections, Collection tabs, Jersey customizer, Image comparison, Media collections, Kit builder, Campaign showcase, Hotspots, Lifestyle showcase, Video, Blog posts, Icon benefits. Pick collections, images and products in each one. Remove sections you do not need.
+6. **Home page.** Open the Home page in the editor. It ships with these sections, in order: Image banner, Media collections, Collection tabs, Jersey customizer, Image comparison, Media collections, Kit builder, Campaign showcase, Hotspots, Lifestyle showcase, Video, Blog posts, Icon benefits. Pick collections, images and products in each one. Remove sections you do not need.
 7. **Other settings worth a look.** Layout (**Page width**, which sets the content width of every section), Shapes, Product cards, Cart (**Cart type**), and Social media.
 
 To send shoppers with an empty cart to the jersey builder, open Theme settings > **Cart** and set **Jersey builder link**. It adds a **Build your own kit** button next to **Continue shopping** when the cart is empty. Leave it blank to hide the button.
+
+Quantity fields in the cart follow each product's quantity rules in Shopify admin (minimum, maximum and increment).
+
+Each image setting shows a recommended size. Use it as a guide when you prepare images.
 
 ## Where to find each template
 
@@ -52,9 +56,10 @@ Open the page type in the theme editor preview selector.
 | `search` | Search results | Search results |
 | `blog`, `article` | Blog and posts | Blog listing, Blog article |
 | `page`, `page.about`, `page.care`, `page.contact`, `page.faq`, `page.orders`, `page.showcase`, `page.sport`, `page.teamwear`, `page.jersey-studio` | Pages. Pick the template on the page in Shopify admin. | Page content, FAQ, Contact form and others |
-| `customers/*` (account, login, register, addresses, order, reset and activate password) | Customer accounts | Customer account |
 | `password` | Password page | Password page |
 | `gift_card.liquid` | Gift card page | Standalone template |
 | `404` | Not found | 404 page |
+
+Customer account pages (sign in, orders and addresses) are not part of the theme. They use Shopify's customer accounts.
 
 The header and footer live in two section groups: **Header group** (Announcement bar and Header) and **Footer** (Footer and Welcome popup).
