@@ -42,7 +42,7 @@ How it works:
 - Each print mode resolves to the variant whose Personalization value matches. Prices come from that variant and stay the same in the cart.
 - The price difference between `Plain` and the chosen mode is shown beside each print option (when **Show price beside each printing option** is on). A zero difference shows "Included".
 - **Printing pricing** has two choices. *Paid printing, uses product variants* (default) needs a variant for each mode. A missing variant means the mode shows as unavailable and cannot be ordered. *Printing included at no extra charge* always uses the Plain variant price for every mode.
-- If a product has no Personalization option and pricing is set to paid printing, only the plain jersey can be ordered. In the theme editor a setup note explains this.
+- If a product chosen in a Jersey model block has no Personalization option, printing is added at no extra charge for that product, even when pricing is set to paid printing. In the theme editor a setup note explains this. To charge for printing, add the option and its variants to the product.
 - Sold out variants disable the matching print option.
 - A legacy option named `Patch`, `Badge`, `Arma` or `Rozet` is supported. Only the variants whose value is "No patch", "None" and similar are used.
 - Other options (for example a second color option) appear under the size step.
@@ -157,7 +157,7 @@ On add to cart the theme sends these properties with the variant:
 | `_Jersey squad` | Squad orders only. One batch id shared by every line added in the same squad order. |
 | `_Jersey squad row` | Squad orders only. The position of the player in the order, starting at 1 and counting only the filled rows. |
 
-In the cart, a line of a jersey product shows a one-line summary under the product title: the size, then the printed name and number, for example "M · KAYA 10". The product type is shown above the title as the kit tag. The size is read from the Size option (or `Beden`). Other options and details, such as the personalization type and print color, stay listed below it.
+In the cart, a line of a jersey product shows a one-line summary under the product title: the size, then the printed name and number, for example "M · KAYA 10". The product type is shown above the title as the kit tag. The size is read from the option named in **Size option name**; when that setting is empty the theme looks for Size and its common translations (for example Taille, Größe, Talla, Beden), then for the single option left besides color, patch and personalization. The product title in a jersey line links back to the builder with the same model, size, printing type, name, number and print color filled in. Other options and details, such as the personalization type and print color, stay listed below it.
 
 Squad lines carry the same properties as single shirts, except `Player`, plus the two squad keys. Properties starting with an underscore are hidden from the cart display. The label text for the visible properties comes from the theme locale strings (`property_audience`, `property_player`, `property_name`, `property_number`, `property_color`). If the theme cart script is not available, the same properties are written as hidden form fields and the form submits normally.
 
@@ -224,7 +224,7 @@ Kit lines in the cart also show the product type as a kit tag above the title (s
 
 **Content**: Subheading, Heading, Use as the page heading (use only for the main section on a page; product pages use the product title), Description, Name placeholder, Number placeholder.
 
-**Printing and pricing**: Printing pricing, Show price beside each printing option, Show jersey and printing breakdown, Use name only, Use name and number, Use player selection, the five option name and value fields, Price note, Size guide page, Size guide link.
+**Printing and pricing**: Printing pricing, Show price beside each printing option, Show jersey and printing breakdown, Use name only, Use name and number, Use player selection, the five option name and value fields, Size option name, Price note, Size guide page, Size guide link.
 
 **Appearance**: Color palette (Light, Soft, Dark, Accent, Brand colors), Preview background, Preview text color, Follow theme media radius (on by default; uses **Media corner radius** from Theme settings > **Shapes**), Corner radius (0 to 24 px, default 2, shown when Follow theme media radius is off), Print style.
 
