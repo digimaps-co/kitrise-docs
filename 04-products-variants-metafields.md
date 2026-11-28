@@ -165,9 +165,12 @@ In the theme editor, open the Buy buttons block and check **Show local pickup av
 
 What shows:
 
-- A **View stores** disclosure under the buttons, listing each pickup location with its name, whether it is **Available for pickup** (with the pickup time) or not, and its address.
-- It updates when the customer changes variant.
-- Nothing shows when no location has pickup enabled.
+- A summary line under the buttons: **Pickup available at** the first location that has the selected variant, with the pickup time, or **Pickup currently unavailable at** the location when none has it.
+- A disclosure under the summary, labeled **View store information** (one location) or **Check availability at other stores** (several), listing each pickup location with its name, whether it is **Available for pickup** (with the pickup time) or not, and its address.
+- Both update when the customer changes variant.
+- Nothing shows when no pickup location stocks the selected variant.
+
+In the product gallery, thumbnails of videos and 3D models carry a small play or 3D mark so shoppers can tell them from images.
 - It is never shown for gift cards.
 
 ## 7. Payment terms
