@@ -124,7 +124,7 @@ Customers can leave a note for your team with their order.
 
 **How to get help**
 
-Email support@digimaps.co. Include:
+Use the contact form on the [support page](support.html), or email support@digimaps.co. Include:
 
 - Your store URL
 - The theme version (Theme settings shows `1.0.0` for the first release)
