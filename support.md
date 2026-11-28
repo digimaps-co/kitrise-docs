@@ -10,7 +10,7 @@ Kitrise is built and supported by digimaps.co.
 
 Send a support request with the form below. Replies are sent on business days, within 2 business days.
 
-<form class="support-form" action="https://formsubmit.co/support@digimaps.co" method="POST" enctype="multipart/form-data">
+<form class="support-form" action="https://formsubmit.co/953ca53d48a8352f5b6453d08982c1fa" method="POST" enctype="multipart/form-data">
   <input type="hidden" name="_subject" value="Kitrise support request">
   <input type="hidden" name="_template" value="table">
   <input type="hidden" name="_next" value="https://digimaps-co.github.io/kitrise-docs/support-sent.html">
