@@ -20,7 +20,8 @@ The product page template is `templates/product.json`. It holds two sections:
 | Block | Limit | What it does |
 | --- | --- | --- |
 | App blocks | any | Lets you add app blocks. |
-| Vendor | 1 | Shows the product vendor. |
+| Product type | 1 | Shows the product type as a tag. |
+| Vendor | 1 | Always shows the product vendor. |
 | Product heading | 1 | Product title. Settings: **Show vendor** (used only when there is no Vendor block), **Show SKU** (used only when there is no SKU block). |
 | SKU | 1 | Shows the SKU of the selected variant. |
 | Price | 1 | Price, compare-at price, sale badge, unit price, and the taxes and shipping policy notes. |
@@ -43,7 +44,7 @@ Blocks render in the order they appear in the theme editor. Drag to reorder.
 
 The default template uses this order:
 
-1. Complete the kit groups (five groups set to Selected collections only; each stays hidden until you choose its collections and its products or collection)
+1. Product type
 2. Vendor
 3. Product heading
 4. Price

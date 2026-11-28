@@ -55,7 +55,7 @@ Theme settings > **Colors** has a **Section palettes** header with six colors. T
 | Dark background | #171918 |
 | Dark text | #f8f8f5 |
 
-Most sections have a **Color palette** select (setting id `palette`). In most sections it adds a `fx-palette--<value>` class, and the section then uses that palette's background, text, muted text and line colors. A few sections, such as Hero and Countdown, apply the value through their own section class instead.
+Most sections have a **Color palette** select (setting id `palette`). In most sections it adds a `fx-palette--<value>` class, and the section then uses that palette's background, text, muted text and line colors. A few sections, such as Image banner and Countdown, apply the value through their own section class instead.
 
 Values:
 

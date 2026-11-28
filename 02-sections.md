@@ -38,7 +38,7 @@ A campaign intro with a large image panel and a product list beside it.
 - Blocks: Product (up to 4)
 - Key settings: Layout, Button link, Sale badge style, Show compare-at price
 
-## Collection cards
+## Collection list
 
 A set of collection cards chosen by the merchant.
 
@@ -56,7 +56,7 @@ The main product grid of the collection template, with filters, sorting and opti
 - Blocks: Collection banner, Custom Liquid (1), up to 6 in total
 - Key settings: Filter layout, Desktop columns, Products per page, Show filters, Grid style
 
-The page opens with a title band that holds the collection title, the description (**Show description**) and the product count. With **Show image** and **Show image in title band** (`header_image`, off by default) on, the collection image sits at the right of the band. The collection needs an image for it to appear.
+The page opens with a title band that holds the collection title, the description (**Show description**) and the product count. The collection image sits at the right of the band. This is on by default. It is controlled by **Show image** and **Show image in heading band** (`header_image`). Turn off **Show image in heading band** to hide the image from the band. The collection needs an image for it to appear.
 
 Under the band, **Show kit type chips** (`show_type_chips`, on by default) adds quick filters by product type. They need **Show filters** on and the Product type filter active in Search & Discovery (see "Filters (Search & Discovery)" in Products, variants and metafields).
 
@@ -107,13 +107,6 @@ A flexible section with a background image that holds theme blocks (Text, Button
 Color palette offers Light (default), Soft, Dark, Accent and Brand colors. **Top spacing** and **Bottom spacing** (0 to 96 px, default 40) are under the **Mobile** header. Turn on **Show advanced controls** under the **Advanced** header to set **Desktop top spacing** and **Desktop bottom spacing** (0 to 160 px, default 72).
 
 Besides Text and the layout group, the section accepts **Button** and **Image** blocks. A Text block in the **Heading** style is read as a heading by screen readers. Button has **Label**, **Link** and **Button style** (Solid, Outline, Quiet). Image has **Image**, **Image ratio** (Natural, Square, Portrait, Landscape) and **Round corners**. The section adds a **Custom section** preset and two more presets, **Rich text** (heading, text and button) and **Image with text** (image beside text and a button).
-## Email signup
-
-An email signup form with optional image and consent text.
-
-- Templates: Any template. Not available in the header section group.
-- Blocks: Custom Liquid (1)
-- Key settings: Layout, Image, Consent and privacy text, Color palette
 
 ## FAQ
 
@@ -143,16 +136,6 @@ A grid of products from a collection or a hand-picked list, with an optional fea
 
 For a product row from one collection, pick it in Collection and set Layout to Horizontal carousel or Grid.
 
-## Hero
-
-A large banner with image or video, heading, text and up to two buttons.
-
-- Templates: Any template. Not available in header or footer section groups.
-- Blocks: None.
-- Key settings: Media type, Layout, Desktop media height, Use as the page main heading
-
-**Use as the page main heading** is off by default. Turn it on for one section per page only.
-
 ## Hotspots
 
 An image with clickable pins that open details or a product.
@@ -168,6 +151,16 @@ A short row of icon benefits, such as shipping, returns or support.
 - Templates: Any template. Not available in header or footer section groups.
 - Blocks: Benefit (up to 5)
 - Key settings: Layout, Heading, Color palette
+
+## Image banner
+
+A large banner with image or video, heading, text and up to two buttons.
+
+- Templates: Any template. Not available in header or footer section groups.
+- Blocks: None.
+- Key settings: Media type, Layout, Desktop media height, Use as the page heading
+
+**Use as the page heading** is off by default. Turn it on for one section per page only.
 
 ## Image comparison
 
@@ -195,6 +188,8 @@ Lets shoppers pick a set number of products and add them to the cart together.
 - Blocks: Product (up to 8)
 - Key settings: Products to choose, Offer note, Product card layout, Desktop product columns
 
+Sold-out products are not counted as selectable, and automatic product selection skips them. In the theme editor, a note appears when fewer than two products can be selected.
+
 ## Lifestyle showcase
 
 A lifestyle image with up to three product moments.
@@ -218,6 +213,14 @@ Large media cards that link to collections.
 - Templates: Any template. Not available in header or footer section groups.
 - Blocks: Collection card (up to 8)
 - Key settings: Desktop columns, Mobile layout, Text placement, Show product count
+
+## Newsletter
+
+A newsletter signup form with optional image and consent text.
+
+- Templates: Any template. Not available in the header section group.
+- Blocks: Custom Liquid (1)
+- Key settings: Layout, Image, Consent and privacy text, Color palette
 
 ## Page content
 
@@ -271,9 +274,11 @@ A video section with poster, optional text and button over or below it.
 
 - Templates: Any template. Not available in header or footer section groups.
 - Blocks: None.
-- Key settings: Desktop file, Autoplay, Show play and pause button, Desktop ratio
+- Key settings: Desktop file, Video link, Autoplay, Show play and pause button, Desktop ratio
 
-**Use as page heading (h1)** is off by default.
+To use a YouTube or Vimeo video, paste its address in **Video link**. A video uploaded to Shopify in **Desktop file** takes priority over the link. An external video loads only after the visitor selects play, so the page stays fast.
+
+**Use as the page heading** is off by default.
 
 ## Welcome popup
 
@@ -290,6 +295,8 @@ These four sections belong to fixed places in the theme and are not part of the 
 ### Header
 
 Open the **Header group** and select the **Header** section.
+
+**Account menu** is a menu picker. It sets the menu shown in the signed-in account dropdown. The theme has no customer account pages of its own. Sign in, orders and addresses use Shopify's customer accounts.
 
 **Two-level dropdown style** is hidden when the layout is the centered logo with drawer navigation. It chooses how a desktop menu item with one level of sub-links opens. The options are **Text list** and **Image tiles**. The default in the theme's own header group is **Image tiles**. A header that does not have the setting saved uses **Text list**. The help text reads: "Menu items with one level of sub-links. Tiles show the collection or product image next to each title. Up to 6 collection or product links show an image. Items with three levels keep the mega menu."
 

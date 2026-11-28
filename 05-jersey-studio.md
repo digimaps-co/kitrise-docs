@@ -66,7 +66,7 @@ Add one **Jersey model** block per product (up to 15). Each block has:
 
 Turn on **Show advanced settings** on the block to show all position and size fields together: **Name: distance from top**, **Number: distance from top**, **Name size**, **Number size**, **Print: distance from left** and **Print area width**. They are percentages of the image. Set them after you add your own front and back images.
 
-A block without a product is not shown in the builder. If no block has a product, the section shows an empty state; in the editor it says "Add a product to a Jersey model block to enable the builder." The product template is the exception: when no block has a product, the builder uses the product of the page as its only model, so the product can still be bought. The category and model steps are hidden, and the personalization step and squad order are hidden when the product has no Personalization option. The editor shows the note "Showing this product. Select a product in each Jersey model block to offer more models."
+On pages other than a product page, a Jersey model block without a product is filled with a different available product from your store (gift cards are skipped). On a product page, a block without a product is not shown in the builder. If no block has a product and the store has none to offer, the section shows an empty state; in the editor it says "Add a product to a Jersey model block to enable the builder." The product template is the exception: when no block has a product, the builder uses the product of the page as its only model, so the product can still be bought. The category and model steps are hidden, and the personalization step and squad order are hidden when the product has no Personalization option. The editor shows the note "Showing this product. Select a product in each Jersey model block to offer more models."
 
 The shopper chooses a category first (Men, Women, Kids), then a model in that category. Adult blocks show for Men and Women.
 
@@ -183,6 +183,8 @@ When a print mode is selected, the theme compares the model swatch color to the 
 - When **Use as the page heading** is on, a price line appears under the product title on a product page. It reads "From" followed by the lowest variant price when the variants have different prices, and shows the price alone when they all cost the same. It updates when the shopper changes the model.
 - The form always shows a quantity field. On a product page the section also shows accelerated checkout (**Show accelerated checkout**, shown for plain jerseys only) and local pickup (**Show local pickup availability**).
 - A model product description is shown under the price for the selected model.
+- If the selected product has subscription (selling plan) options, a **Purchase option** field appears and the chosen plan is sent with the order.
+- On a product page, the address follows the selected variant (`?variant=`), so a shopper can share a link to a specific jersey and size.
 
 ## Jersey stage on product cards
 

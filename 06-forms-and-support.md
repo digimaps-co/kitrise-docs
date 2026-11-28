@@ -66,7 +66,7 @@ In the **Footer** section:
 
 ### Section
 
-Add the **Email signup** section to any page.
+Add the **Newsletter** section to any page.
 
 - Layout: Wide band or Split
 - Subheading, Heading, Text
